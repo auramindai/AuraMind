@@ -48,8 +48,8 @@
             },
             hero: {
                 eyebrow: "AI BUSINESS AUTOMATION",
-                h1_line1: "AI systems",
-                h1_line2: "that work for your business.",
+                h1_line1: "AI that answers customers",
+                h1_line2: "so your team can focus on growth.",
                 description: "AuraMind builds custom AI systems that talk to customers, capture leads, take orders, remember conversations, and automate repetitive work — 24/7.",
                 btnPrimary: "Book a Free Demo",
                 btnSecondary: "See How It Works",
@@ -231,8 +231,8 @@
             },
             hero: {
                 eyebrow: "YAPAY ZEKA İLE İŞLETME OTOMASYONU",
-                h1_line1: "İşletmeniz için çalışan",
-                h1_line2: "yapay zeka sistemleri.",
+                h1_line1: "Müşterilerinizi yanıtlayan yapay zeka,",
+                h1_line2: "ekibiniz büyümeye odaklansın.",
                 description: "AuraMind; müşterilerle konuşan, potansiyel müşteri yakalayan, sipariş alan, görüşmeleri hatırlayan ve tekrarlayan işleri otomatikleştiren özel yapay zeka sistemleri kurar — 7/24.",
                 btnPrimary: "Ücretsiz Demo Alın",
                 btnSecondary: "Nasıl Çalıştığını Görün",
@@ -414,8 +414,8 @@
             },
             hero: {
                 eyebrow: "أتمتة الأعمال بالذكاء الاصطناعي",
-                h1_line1: "أنظمة ذكاء اصطناعي",
-                h1_line2: "تعمل لصالح عملك.",
+                h1_line1: "ذكاء اصطناعي يرد على عملائك،",
+                h1_line2: "ليتفرغ فريقك للنمو.",
                 description: "تبني AuraMind أنظمة ذكاء اصطناعي مخصصة تتحدث مع العملاء، وترصد العملاء المحتملين، وتستقبل الطلبات، وتتذكر المحادثات، وتؤتمت الأعمال المتكررة — على مدار الساعة.",
                 btnPrimary: "احجز عرضًا تجريبيًا مجانيًا",
                 btnSecondary: "شاهد كيف نعمل",
