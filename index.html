@@ -1,2626 +1,1009 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="AuraMind builds custom AI systems that automate customer conversations, capture leads, take orders, and streamline business workflows."
-        data-i18n="meta.description"
-        data-i18n-attr="content"
-    >
-
-    <meta name="theme-color" content="#08080A">
-
-    <title data-i18n="meta.title">AuraMind | AI Automation Agency</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link
-        href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
-        rel="stylesheet"
-    >
-
-    <link rel="stylesheet" href="style.css">
-
-    <meta property="og:title" content="AuraMind | AI Automation Agency">
-    <meta
-        property="og:description"
-        content="Custom AI systems that work for your business."
-    >
-    <meta property="og:type" content="website">
-
-    <meta name="twitter:card" content="summary_large_image">
-</head>
-
-<body>
-
-<!-- =========================================================
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>AuraMind | AI Automation Agency</title>
+        <meta name="description" content="AuraMind builds custom AI assistants for WhatsApp, Instagram and your website that answer customers, capture leads, take orders and book appointments, 24/7.">
+        <meta name="theme-color" content="#08080A">
+        <meta name="color-scheme" content="dark">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="robots" content="index, follow, max-image-preview:large">
+        <link rel="icon" href="favicon.svg" type="image/svg+xml">
+        <script>
+document.documentElement.classList.add("js");
+        </script>
+        <noscript>
+            <style>
+[data-animate]{opacity:1!important;transform:none!important}
+            </style>
+        </noscript>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap">
+        </noscript>
+        <link rel="stylesheet" href="style.css">
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "AuraMind AI",
+  "description": "AuraMind builds custom AI assistants for WhatsApp, Instagram and your website that answer customers, capture leads, take orders and book appointments, 24/7.",
+  "email": "auramind.cy@gmail.com",
+  "telephone": "+905488630491",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lefkoşa",
+    "addressRegion": "Northern Cyprus"
+  },
+  "knowsLanguage": [
+    "en",
+    "tr",
+    "ar"
+  ],
+  "serviceType": [
+    "AI customer support automation",
+    "AI lead capture",
+    "AI ordering",
+    "AI appointment booking"
+  ],
+  "sameAs": [
+    "https://www.instagram.com/auramind.cy",
+    "https://www.linkedin.com/in/auramind-ai-49ab6a429/"
+  ]
+}
+        </script>
+        <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does the setup fee cover?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It is a one-time $200 fee that applies to every package. After that, the monthly fee covers hosting, maintenance and small updates."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which languages can the assistant use?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Starter supports up to 2 languages. Business and Pro support English, Turkish and Arabic."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can my team take over a conversation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The assistant handles routine questions, and your team steps in whenever a person is needed. On Business and Pro you also get instant lead notifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fill in the short form below. It opens WhatsApp so we can reply directly, usually within a few hours."
+      }
+    }
+  ]
+}
+        </script>
+        <meta property="og:site_name" content="AuraMind AI">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="AuraMind | AI Automation Agency">
+        <meta property="og:description" content="Custom AI assistants that answer customers, capture leads and take orders, 24/7.">
+        <meta property="og:locale" content="en_US">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="AuraMind | AI Automation Agency">
+        <meta name="twitter:description" content="Custom AI assistants that answer customers, capture leads and take orders, 24/7.">
+    </head>
+    <body data-page="home">
+        <a class="skip-link" href="#main-content" data-i18n="a11y.skip">Skip to content</a>
+        <!-- =========================================================
      NAVIGATION
 ========================================================= -->
-
-<header class="navbar">
-
-    <div class="container nav-container">
-
-        <a href="#home" class="logo" aria-label="AuraMind home">
-
-            <svg
-                class="logo-mark"
-                viewBox="0 0 40 40"
-                fill="none"
-                aria-hidden="true"
-            >
-                <ellipse
-                    cx="20"
-                    cy="20"
-                    rx="16"
-                    ry="6.4"
-                    stroke="url(#navRingGrad)"
-                    stroke-width="1.3"
-                    opacity="0.95"
-                />
-
-                <ellipse
-                    cx="20"
-                    cy="20"
-                    rx="16"
-                    ry="6.4"
-                    stroke="url(#navRingGrad)"
-                    stroke-width="1.3"
-                    opacity="0.65"
-                    transform="rotate(60 20 20)"
-                />
-
-                <ellipse
-                    cx="20"
-                    cy="20"
-                    rx="16"
-                    ry="6.4"
-                    stroke="url(#navRingGrad)"
-                    stroke-width="1.3"
-                    opacity="0.4"
-                    transform="rotate(120 20 20)"
-                />
-
-                <circle
-                    cx="20"
-                    cy="20"
-                    r="4.6"
-                    fill="url(#navCoreGrad)"
-                />
-
-                <circle
-                    cx="36"
-                    cy="20"
-                    r="1.3"
-                    fill="#F7F7F8"
-                />
-
-                <circle
-                    cx="28"
-                    cy="33.9"
-                    r="1.1"
-                    fill="#B5A4F2"
-                />
-
-                <circle
-                    cx="12"
-                    cy="33.9"
-                    r="1"
-                    fill="#8D78D8"
-                />
-
-                <defs>
-
-                    <linearGradient
-                        id="navRingGrad"
-                        x1="4"
-                        y1="20"
-                        x2="36"
-                        y2="20"
-                        gradientUnits="userSpaceOnUse"
-                    >
-                        <stop offset="0%" stop-color="#8D78D8"/>
-                        <stop offset="50%" stop-color="#F7F7F8"/>
-                        <stop offset="100%" stop-color="#B5A4F2"/>
-                    </linearGradient>
-
-                    <radialGradient
-                        id="navCoreGrad"
-                        cx="35%"
-                        cy="32%"
-                        r="70%"
-                    >
-                        <stop offset="0%" stop-color="#FFFFFF"/>
-                        <stop offset="100%" stop-color="#8D78D8"/>
-                    </radialGradient>
-
-                </defs>
-
-            </svg>
-
-            <span class="logo-text">
-                AURA MIND<span class="accent"> AI</span>
-            </span>
-
-        </a>
-
-        <nav
-            class="nav-links"
-            aria-label="Main navigation"
-        >
-
-            <a
-                href="#services"
-                data-i18n="nav.services"
-            >
-                Services
-            </a>
-
-            <a
-                href="#industries"
-                data-i18n="nav.industries"
-            >
-                Industries
-            </a>
-
-            <a
-                href="#how-it-works"
-                data-i18n="nav.howItWorks"
-            >
-                How It Works
-            </a>
-
-            <a
-                href="#about"
-                data-i18n="nav.about"
-            >
-                About
-            </a>
-
-            <a
-                href="#contact"
-                data-i18n="nav.contact"
-            >
-                Contact
-            </a>
-
-        </nav>
-
-        <div class="nav-right">
-
-            <div
-                class="lang-switch"
-                aria-label="Language selector"
-            >
-
-                <button
-                    type="button"
-                    class="lang-option is-active"
-                    data-lang="en"
-                    aria-current="true"
-                >
-                    EN
+        <header class="navbar">
+            <div class="container nav-container">
+                <a href="#home" class="logo" aria-label="AuraMind home" data-i18n="a11y.home" data-i18n-attr="aria-label">
+                    <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+                        <ellipse cx="20" cy="20" rx="16" ry="6.4" stroke="url(#navRingGrad)" stroke-width="1.3" opacity="0.95"/>
+                        <ellipse cx="20" cy="20" rx="16" ry="6.4" stroke="url(#navRingGrad)" stroke-width="1.3" opacity="0.65" transform="rotate(60 20 20)"/>
+                        <ellipse cx="20" cy="20" rx="16" ry="6.4" stroke="url(#navRingGrad)" stroke-width="1.3" opacity="0.4" transform="rotate(120 20 20)"/>
+                        <circle cx="20" cy="20" r="4.6" fill="url(#navCoreGrad)"/>
+                        <circle cx="36" cy="20" r="1.3" fill="#F7F7F8"/>
+                        <circle cx="28" cy="33.9" r="1.1" fill="#B5A4F2"/>
+                        <circle cx="12" cy="33.9" r="1" fill="#8D78D8"/>
+                        <defs>
+                            <linearGradient id="navRingGrad" x1="4" y1="20" x2="36" y2="20" gradientUnits="userSpaceOnUse">
+                                <stop offset="0%" stop-color="#8D78D8"/>
+                                <stop offset="50%" stop-color="#F7F7F8"/>
+                                <stop offset="100%" stop-color="#B5A4F2"/>
+                            </linearGradient>
+                            <radialGradient id="navCoreGrad" cx="35%" cy="32%" r="70%">
+                                <stop offset="0%" stop-color="#FFFFFF"/>
+                                <stop offset="100%" stop-color="#8D78D8"/>
+                            </radialGradient>
+                        </defs>
+                    </svg>
+                    <span class="logo-text">AURAMIND<span class="accent"> AI</span></span>
+                </a>
+                <nav class="nav-links" aria-label="Main navigation" data-i18n="a11y.mainNav" data-i18n-attr="aria-label">
+                    <a href="#services" data-i18n="nav.services">Services</a>
+                    <a href="#industries" data-i18n="nav.industries">Industries</a>
+                    <a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
+                    <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+                    <a href="#about" data-i18n="nav.about">About</a>
+                    <a href="#contact" data-i18n="nav.contact">Contact</a>
+                </nav>
+                <div class="nav-right">
+                    <div class="lang-switch" role="group" aria-label="Language selector" data-i18n="a11y.language" data-i18n-attr="aria-label">
+                        <button type="button" class="lang-option is-active" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+                        <span class="lang-divider">/</span>
+                        <button type="button" class="lang-option" data-lang="tr" lang="tr" aria-label="Türkçe" aria-pressed="false">TR</button>
+                        <span class="lang-divider">/</span>
+                        <button type="button" class="lang-option" data-lang="ar" lang="ar" aria-label="العربية" aria-pressed="false">AR</button>
+                    </div>
+                    <a href="#contact" class="nav-button" data-i18n="nav.bookDemo">Book a Demo</a>
+                </div>
+                <button type="button" class="mobile-menu-button" id="mobileMenuButton" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNavLinks">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
-
-                <span class="lang-divider">/</span>
-
-                <button
-                    type="button"
-                    class="lang-option"
-                    data-lang="tr"
-                    aria-current="false"
-                >
-                    TR
-                </button>
-
-                <span class="lang-divider">/</span>
-
-                <button
-                    type="button"
-                    class="lang-option"
-                    data-lang="ar"
-                    aria-current="false"
-                >
-                    AR
-                </button>
-
             </div>
-
-            <a
-                href="#contact"
-                class="nav-button"
-                data-i18n="nav.bookDemo"
-            >
-                Book a Demo
-            </a>
-
-        </div>
-
-        <button
-            type="button"
-            class="mobile-menu-button"
-            id="mobileMenuButton"
-            aria-label="Open menu"
-            aria-expanded="false"
-            aria-controls="mobileNavLinks"
-        >
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-
-    </div>
-
-    <nav
-        class="mobile-nav-links"
-        id="mobileNavLinks"
-        aria-label="Mobile navigation"
-        aria-hidden="true"
-    >
-
-        <a
-            href="#services"
-            data-i18n="nav.services"
-        >
-            Services
-        </a>
-
-        <a
-            href="#industries"
-            data-i18n="nav.industries"
-        >
-            Industries
-        </a>
-
-        <a
-            href="#how-it-works"
-            data-i18n="nav.howItWorks"
-        >
-            How It Works
-        </a>
-
-        <a
-            href="#about"
-            data-i18n="nav.about"
-        >
-            About
-        </a>
-
-        <a
-            href="#contact"
-            data-i18n="nav.contact"
-        >
-            Contact
-        </a>
-
-        <div
-            class="lang-switch lang-switch-mobile"
-            aria-label="Language selector"
-        >
-
-            <button
-                type="button"
-                class="lang-option is-active"
-                data-lang="en"
-                aria-current="true"
-            >
-                EN
-            </button>
-
-            <span class="lang-divider">/</span>
-
-            <button
-                type="button"
-                class="lang-option"
-                data-lang="tr"
-                aria-current="false"
-            >
-                TR
-            </button>
-
-            <span class="lang-divider">/</span>
-            <button
-                type="button"
-                class="lang-option"
-                data-lang="ar"
-                aria-current="false"
-            >
-                AR
-            </button>
-
-        </div>
-
-        <a
-            href="#contact"
-            class="nav-button mobile-demo-button"
-            data-i18n="nav.bookDemo"
-        >
-            Book a Demo
-        </a>
-
-    </nav>
-
-</header>
-
-<main>
-
-<!-- =========================================================
+            <nav class="mobile-nav-links" id="mobileNavLinks" aria-label="Mobile navigation" data-i18n="a11y.mobileNav" data-i18n-attr="aria-label" aria-hidden="true">
+                <a href="#services" data-i18n="nav.services">Services</a>
+                <a href="#industries" data-i18n="nav.industries">Industries</a>
+                <a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
+                <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+                <div class="lang-switch lang-switch-mobile" role="group" aria-label="Language selector" data-i18n="a11y.language" data-i18n-attr="aria-label">
+                    <button type="button" class="lang-option is-active" data-lang="en" lang="en" aria-label="English" aria-pressed="true">EN</button>
+                    <span class="lang-divider">/</span>
+                    <button type="button" class="lang-option" data-lang="tr" lang="tr" aria-label="Türkçe" aria-pressed="false">TR</button>
+                    <span class="lang-divider">/</span>
+                    <button type="button" class="lang-option" data-lang="ar" lang="ar" aria-label="العربية" aria-pressed="false">AR</button>
+                </div>
+                <a href="#contact" class="nav-button mobile-demo-button" data-i18n="nav.bookDemo">Book a Demo</a>
+            </nav>
+        </header>
+        <main id="main-content" tabindex="-1">
+            <!-- =========================================================
      HERO
 ========================================================= -->
-
-<section
-    id="home"
-    class="hero section"
->
-
-    <div
-        class="hero-background"
-        aria-hidden="true"
-    >
-
-        <div class="grid-overlay"></div>
-
-        <div class="glow glow-one"></div>
-
-        <div class="glow glow-two"></div>
-
-    </div>
-
-    <div class="container hero-container">
-
-        <div class="hero-content">
-
-            <span
-                class="eyebrow"
-                data-animate="fade-up"
-                data-i18n="hero.eyebrow"
-            >
-                AI BUSINESS AUTOMATION
-            </span>
-
-            <h1
-                class="hero-title"
-                data-animate="fade-up"
-                data-animate-delay="1"
-            >
-
-                <span
-                    class="hero-title-line1"
-                    data-i18n="hero.h1_line1"
-                >
-                    AI that answers customers
-                </span>
-
-                <span
-                    class="hero-title-line2"
-                    data-i18n="hero.h1_line2"
-                >
-                    so your team can focus on growth.
-                </span>
-
-            </h1>
-
-            <p
-                class="hero-description"
-                data-i18n="hero.description"
-                data-animate="fade-up"
-                data-animate-delay="2"
-            >
-                AuraMind builds custom AI systems that talk to customers,
-                capture leads, take orders, remember conversations,
-                and automate repetitive work — 24/7.
-            </p>
-
-            <div
-                class="hero-buttons"
-                data-animate="fade-up"
-                data-animate-delay="3"
-            >
-
-                <a
-                    href="#contact"
-                    class="btn btn-primary"
-                >
-
-                    <span data-i18n="hero.btnPrimary">
-                        Book a Free Demo
-                    </span>
-
-                    <span aria-hidden="true">
-                        →
-                    </span>
-
-                </a>
-
-                <a
-                    href="#how-it-works"
-                    class="btn btn-secondary"
-                    data-i18n="hero.btnSecondary"
-                >
-                    See How It Works
-                </a>
-
-            </div>
-
-            <div
-                class="hero-trust"
-                data-animate="fade-up"
-                data-animate-delay="4"
-            >
-
-                <div class="trust-item">
-
-                    <strong>
-                        24/7
-                    </strong>
-
-                    <small data-i18n="hero.trustAvailability">
-                        AI availability
-                    </small>
-
+            <section id="home" aria-labelledby="hero-title" class="hero section">
+                <div class="hero-background" aria-hidden="true">
+                    <div class="grid-overlay"></div>
+                    <div class="glow glow-one"></div>
+                    <div class="glow glow-two"></div>
                 </div>
-
-                <div class="trust-divider"></div>
-
-                <div class="trust-item">
-
-                    <strong>
-                        Instant
-                    </strong>
-
-                    <small data-i18n="hero.trustResponse">
-                        Customer responses
-                    </small>
-
-                </div>
-
-                <div class="trust-divider"></div>
-
-                <div class="trust-item">
-
-                    <strong>
-                        Custom
-                    </strong>
-                    <small data-i18n="hero.trustCustom">
-                        Built for your business
-                    </small>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- =====================================================
+                <div class="container hero-container">
+                    <div class="hero-content">
+                        <span class="eyebrow" data-animate="fade-up" data-i18n="hero.eyebrow">AI BUSINESS AUTOMATION</span>
+                        <h1 id="hero-title" class="hero-title" data-animate="fade-up" data-animate-delay="1">
+                            <span class="hero-title-line1" data-i18n="hero.h1_line1">AI that answers customers</span>
+                            <span class="hero-title-line2" data-i18n="hero.h1_line2">so your team can focus on growth.</span>
+                        </h1>
+                        <p class="hero-description" data-i18n="hero.description" data-animate="fade-up" data-animate-delay="2">AuraMind builds custom AI systems that talk to customers, capture leads, take orders, remember conversations, and automate repetitive work — 24/7.</p>
+                        <div class="hero-buttons" data-animate="fade-up" data-animate-delay="3">
+                            <a href="#contact" class="btn btn-primary">
+                                <span data-i18n="hero.btnPrimary">Book a Free Demo</span>
+                                <span aria-hidden="true">→</span>
+                            </a>
+                            <a href="#how-it-works" class="btn btn-secondary" data-i18n="hero.btnSecondary">See How It Works</a>
+                        </div>
+                        <div class="hero-trust" data-animate="fade-up" data-animate-delay="4">
+                            <div class="trust-item">
+                                <strong data-i18n="hero.trustAvailabilityValue">24/7</strong>
+                                <small data-i18n="hero.trustAvailability">AI availability</small>
+                            </div>
+                            <div class="trust-divider"></div>
+                            <div class="trust-item">
+                                <strong data-i18n="hero.trustResponseValue">Instant</strong>
+                                <small data-i18n="hero.trustResponse">Customer responses</small>
+                            </div>
+                            <div class="trust-divider"></div>
+                            <div class="trust-item">
+                                <strong data-i18n="hero.trustCustomValue">Custom</strong>
+                                <small data-i18n="hero.trustCustom">Built for your business</small>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- =====================================================
              HERO PRODUCT PREVIEW
         ====================================================== -->
-
-        <div
-            class="hero-visual hero-system-visual"
-            data-animate="zoom-in"
-            data-animate-delay="4"
-        >
-
-            <div class="hero-artifact" aria-hidden="true">
-                <video
-                    src="images/hero-nebula.mp4"
-                    autoplay
-                    muted
-                    loop
-                    playsinline
-                    preload="auto"
-                    width="540"
-                    height="540"
-                ></video>
-            </div>
-
-            <div class="system-window">
-
-                <div class="system-window-bar">
-
-                    <div class="window-dots">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                    <div class="hero-visual hero-system-visual" data-animate="zoom-in" data-animate-delay="4">
+                        <div class="hero-artifact" aria-hidden="true">
+                            <video src="images/hero-nebula.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture width="540" height="540"></video>
+                        </div>
+                        <div class="system-window">
+                            <div class="system-window-bar">
+                                <div class="window-dots"><span></span> <span></span> <span></span></div>
+                                <div class="window-title">AuraMind AI</div>
+                                <div class="window-status">
+                                    <span class="status-dot"></span>
+                                    <span data-i18n="hero.online">Online</span>
+                                </div>
+                            </div>
+                            <div class="system-chat">
+                                <div class="system-message customer">
+                                    <small data-i18n="hero.previewCustomerLabel">Customer</small>
+                                    <p data-i18n="hero.previewCustomer">Hi, I'd like to know if you deliver.</p>
+                                </div>
+                                <div class="system-message ai">
+                                    <small data-i18n="hero.previewAiLabel">AuraMind AI</small>
+                                    <p data-i18n="hero.previewAi">Absolutely. I can help with delivery, orders, and any questions about the business.</p>
+                                </div>
+                                <div class="system-actions">
+                                    <span>
+                                        <i aria-hidden="true">✓</i>
+                                        <span data-i18n="hero.previewAction1">Conversation understood</span>
+                                    </span>
+                                    <span>
+                                        <i aria-hidden="true">✓</i>
+                                        <span data-i18n="hero.previewAction2">Customer information captured</span>
+                                    </span>
+                                    <span>
+                                        <i aria-hidden="true">✓</i>
+                                        <span data-i18n="hero.previewAction3">Next action triggered</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="system-float system-float-top">
+                            <strong data-i18n="hero.floatTopTitle">Customer captured</strong>
+                            <small data-i18n="hero.floatTopText">Ready for your workflow</small>
+                        </div>
+                        <div class="system-float system-float-bottom">
+                            <strong data-i18n="hero.floatBottomTitle">AI working</strong>
+                            <small data-i18n="hero.floatBottomText">No manual reply required</small>
+                        </div>
                     </div>
-
-                    <div class="window-title">
-                        AuraMind AI
-                    </div>
-
-                    <div class="window-status">
-
-                        <span class="status-dot"></span>
-
-                        <span data-i18n="hero.online">
-                            Online
-                        </span>
-
-                    </div>
-
                 </div>
-
-                <div class="system-chat">
-
-                    <div class="system-message customer">
-
-                        <small data-i18n="hero.previewCustomerLabel">
-                            Customer
-                        </small>
-
-                        <p data-i18n="hero.previewCustomer">
-                            Hi, I'd like to know if you deliver.
-                        </p>
-
-                    </div>
-
-                    <div class="system-message ai">
-
-                        <small data-i18n="hero.previewAiLabel">
-                            AuraMind AI
-                        </small>
-
-                        <p data-i18n="hero.previewAi">
-                            Absolutely. I can help with delivery,
-                            orders, and any questions about the business.
-                        </p>
-
-                    </div>
-
-                    <div class="system-actions">
-
-                        <span>
-
-                            <i>✓</i>
-
-                            <span data-i18n="hero.previewAction1">
-                                Conversation understood
-                            </span>
-
-                        </span>
-
-                        <span>
-
-                            <i>✓</i>
-
-                            <span data-i18n="hero.previewAction2">
-                                Customer information captured
-                            </span>
-
-                        </span>
-
-                        <span>
-
-                            <i>✓</i>
-
-                            <span data-i18n="hero.previewAction3">
-                                Next action triggered
-                            </span>
-
-                        </span>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div class="system-float system-float-top">
-
-                <strong data-i18n="hero.floatTopTitle">
-                    Customer captured
-                </strong>
-
-                <small data-i18n="hero.floatTopText">
-                    Ready for your workflow
-                </small>
-
-            </div>
-
-            <div class="system-float system-float-bottom">
-
-                <strong data-i18n="hero.floatBottomTitle">
-                    AI working
-                </strong>
-
-                <small data-i18n="hero.floatBottomText">
-                    No manual reply required
-                </small>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================================================
+            </section>
+            <!-- =========================================================
      PLATFORM STRIP
 ========================================================= -->
-
-<section class="platform-strip">
-
-    <div class="container">
-
-        <p
-            class="platform-label"
-            data-i18n="platforms.label"
-        >
-            Built for the channels your customers already use
-        </p>
-
-        <div class="platforms-row">
-            <span class="platform-tag">
-                WhatsApp
-            </span>
-
-            <span class="platform-tag">
-                Instagram
-            </span>
-
-            <span class="platform-tag">
-                Website
-            </span>
-
-            <span class="platform-tag">
-                Email
-            </span>
-
-            <span class="platform-tag">
-                CRM
-            </span>
-
-            <span class="platform-tag">
-                Custom Workflows
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================================================
+            <section id="platforms" class="platform-strip" aria-labelledby="platforms-label">
+                <div class="container">
+                    <p class="platform-label" id="platforms-label" data-i18n="platforms.label">Built for the channels your customers already use</p>
+                    <div class="platforms-row">
+                        <span class="platform-tag">
+                            <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                <path d="M6 17.5 3.8 18.2l.9-2.75A7.25 7.25 0 1 1 11 18.5a7.2 7.2 0 0 1-3.6-.97L6 17.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+                                <path d="M8 9.7c0 3 2.4 5 4.7 5 .5 0 1-.4.9-.9l-.15-.85a.75.75 0 0 0-.5-.58l-1.2-.4a.75.75 0 0 0-.78.2l-.4.42c-.75-.4-1.5-1.15-1.9-1.9l.42-.4a.75.75 0 0 0 .2-.78l-.4-1.2a.75.75 0 0 0-.58-.5L7.9 8.4a.9.9 0 0 0-.9.9v.4Z" fill="currentColor"/>
+                            </svg>
+                            WhatsApp
+                        </span>
+                        <span class="platform-tag">
+                            <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                <rect x="4" y="4" width="14" height="14" rx="4.2" stroke="currentColor" stroke-width="1.3"/>
+                                <circle cx="11" cy="11" r="3.4" stroke="currentColor" stroke-width="1.3"/>
+                                <circle cx="15.1" cy="6.9" r="0.9" fill="currentColor"/>
+                            </svg>
+                            Instagram
+                        </span>
+                        <span class="platform-tag">
+                            <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                <circle cx="11" cy="11" r="7.25" stroke="currentColor" stroke-width="1.3"/>
+                                <path d="M4 11h14M11 3.75c1.7 1.9 2.65 4.5 2.65 7.25S12.7 16.35 11 18.25c-1.7-1.9-2.65-4.5-2.65-7.25S9.3 5.65 11 3.75Z" stroke="currentColor" stroke-width="1.15"/>
+                            </svg>
+                            Website
+                        </span>
+                        <span class="platform-tag">
+                            <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                <rect x="3.5" y="5.5" width="15" height="11" rx="2" stroke="currentColor" stroke-width="1.3"/>
+                                <path d="M4.3 6.8 11 12l6.7-5.2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Email
+                        </span>
+                        <span class="platform-tag">
+                            <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                <ellipse cx="11" cy="5.6" rx="6.5" ry="2.4" stroke="currentColor" stroke-width="1.25"/>
+                                <path d="M4.5 5.6V11c0 1.33 2.9 2.4 6.5 2.4s6.5-1.07 6.5-2.4V5.6" stroke="currentColor" stroke-width="1.25"/>
+                                <path d="M4.5 11v5.4c0 1.33 2.9 2.4 6.5 2.4s6.5-1.07 6.5-2.4V11" stroke="currentColor" stroke-width="1.25"/>
+                            </svg>
+                            CRM
+                        </span>
+                        <span class="platform-tag">
+                            <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                <circle cx="6" cy="6" r="2.15" stroke="currentColor" stroke-width="1.25"/>
+                                <circle cx="16" cy="6" r="2.15" stroke="currentColor" stroke-width="1.25"/>
+                                <circle cx="11" cy="16" r="2.15" stroke="currentColor" stroke-width="1.25"/>
+                                <path d="M7.9 7.1 14.1 4.9M14.7 7.9 12 13.5M9.3 13.5 7.2 8" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+                            </svg>
+                            Custom Workflows
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <!-- =========================================================
      PROBLEM
 ========================================================= -->
-
-<section
-    id="problem"
-    class="problem-section section"
->
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span
-                class="section-kicker"
-                data-i18n="problem.kicker"
-            >
-                THE PROBLEM
-            </span>
-
-            <h2 data-i18n="problem.title">
-                Your customers don't wait.
-            </h2>
-
-            <p data-i18n="problem.description">
-                Every unanswered message, delayed response, and repetitive
-                task creates friction for your business.
-            </p>
-
-        </div>
-
-        <div class="problem-grid">
-
-            <article
-                class="problem-card"
-                data-animate="fade-up"
-            >
-
-                <div class="problem-number">
-                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                        <path d="M3 5.5h14v9H8.5L5 17.5v-3H3v-9Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                        <path d="M6.5 9h7M6.5 11.7h4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-                    </svg>
+            <section id="problem" aria-labelledby="problem-title" class="problem-section section">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker" data-i18n="problem.kicker">THE PROBLEM</span>
+                        <h2 id="problem-title" data-i18n="problem.title">Your customers don't wait.</h2>
+                        <p data-i18n="problem.description">Every unanswered message, delayed response, and repetitive task creates friction for your business.</p>
+                    </div>
+                    <div class="problem-grid">
+                        <article class="problem-card" data-animate="fade-up">
+                            <div class="problem-number">
+                                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                                    <path d="M3 5.5h14v9H8.5L5 17.5v-3H3v-9Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                                    <path d="M6.5 9h7M6.5 11.7h4.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="problem.card1Title">Missed messages</h3>
+                            <p data-i18n="problem.card1Text">Customers reach out when your team is busy, offline, or unavailable.</p>
+                        </article>
+                        <article class="problem-card" data-animate="fade-up">
+                            <div class="problem-number">
+                                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                                    <circle cx="10" cy="10.5" r="6.75" stroke="currentColor" stroke-width="1.4"/>
+                                    <path d="M10 6.75V10.5l3 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="problem.card2Title">Slow replies</h3>
+                            <p data-i18n="problem.card2Text">Delayed responses can turn interested customers into lost opportunities.</p>
+                        </article>
+                        <article class="problem-card" data-animate="fade-up">
+                            <div class="problem-number">
+                                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                                    <path d="M6 5.5H4.75A1.25 1.25 0 0 0 3.5 6.75v6.5a1.25 1.25 0 0 0 1.25 1.25H6M14 5.5h1.25a1.25 1.25 0 0 1 1.25 1.25v6.5a1.25 1.25 0 0 1-1.25 1.25H14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                    <path d="M7.25 4 6 5.5l1.25 1.5M12.75 16l1.25-1.5-1.25-1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.5 10h7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="problem.card3Title">Manual work</h3>
+                            <p data-i18n="problem.card3Text">Your team spends valuable time answering the same questions and processing repetitive requests.</p>
+                        </article>
+                        <article class="problem-card" data-animate="fade-up">
+                            <div class="problem-number">
+                                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                                    <circle cx="5" cy="6" r="1.6" stroke="currentColor" stroke-width="1.3"/>
+                                    <circle cx="14.5" cy="5" r="1.6" stroke="currentColor" stroke-width="1.3"/>
+                                    <circle cx="10" cy="15" r="1.6" stroke="currentColor" stroke-width="1.3"/>
+                                    <path d="M6.3 7.1 9 13.6M13.2 6.2 10.7 13.4M6.4 6.3l7-.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="1 2.4"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="problem.card4Title">Scattered information</h3>
+                            <p data-i18n="problem.card4Text">Customer conversations, leads, orders, and follow-ups can become difficult to manage manually.</p>
+                        </article>
+                    </div>
                 </div>
-
-                <h3 data-i18n="problem.card1Title">
-                    Missed messages
-                </h3>
-
-                <p data-i18n="problem.card1Text">
-                    Customers reach out when your team is busy,
-                    offline, or unavailable.
-                </p>
-
-            </article>
-
-            <article
-                class="problem-card"
-                data-animate="fade-up"
-            >
-
-                <div class="problem-number">
-                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                        <circle cx="10" cy="10.5" r="6.75" stroke="currentColor" stroke-width="1.4"/>
-                        <path d="M10 6.75V10.5l3 2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-
-                <h3 data-i18n="problem.card2Title">
-                    Slow replies
-                </h3>
-
-                <p data-i18n="problem.card2Text">
-                    Delayed responses can turn interested customers
-                    into lost opportunities.
-                </p>
-
-            </article>
-
-            <article
-                class="problem-card"
-                data-animate="fade-up"
-            >
-
-                <div class="problem-number">
-                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                        <path d="M6 5.5H4.75A1.25 1.25 0 0 0 3.5 6.75v6.5a1.25 1.25 0 0 0 1.25 1.25H6M14 5.5h1.25a1.25 1.25 0 0 1 1.25 1.25v6.5a1.25 1.25 0 0 1-1.25 1.25H14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-                        <path d="M7.25 4 6 5.5l1.25 1.5M12.75 16l1.25-1.5-1.25-1.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M6.5 10h7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-                    </svg>
-                </div>
-
-                <h3 data-i18n="problem.card3Title">
-                    Manual work
-                </h3>
-
-                <p data-i18n="problem.card3Text">
-                    Your team spends valuable time answering the same
-                    questions and processing repetitive requests.
-                </p>
-
-            </article>
-
-            <article
-                class="problem-card"
-                data-animate="fade-up"
-            >
-
-                <div class="problem-number">
-                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                        <circle cx="5" cy="6" r="1.6" stroke="currentColor" stroke-width="1.3"/>
-                        <circle cx="14.5" cy="5" r="1.6" stroke="currentColor" stroke-width="1.3"/>
-                        <circle cx="10" cy="15" r="1.6" stroke="currentColor" stroke-width="1.3"/>
-                        <path d="M6.3 7.1 9 13.6M13.2 6.2 10.7 13.4M6.4 6.3l7-.6" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-dasharray="1 2.4"/>
-                    </svg>
-                </div>
-
-                <h3 data-i18n="problem.card4Title">
-                    Scattered information
-                </h3>
-
-                <p data-i18n="problem.card4Text">
-                    Customer conversations, leads, orders, and follow-ups
-                    can become difficult to manage manually.
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================================================
+            </section>
+            <!-- =========================================================
      SOLUTION / AI SYSTEM
 ========================================================= -->
-
-<section
-    id="about"
-    class="solution-section section"
->
-
-    <div class="container solution-container">
-
-        <div
-            class="solution-visual"
-            data-animate="zoom-in"
-        >
-
-            <div class="solution-core">
-
-                <div class="solution-core-glow"></div>
-
-                <div class="solution-core-media">
-                    <img
-                        src="images/ai-human-connection.jpg"
-                        alt="A human hand and a robotic hand reaching toward each other, representing AuraMind's AI working alongside your team"
-                        loading="lazy"
-                        width="700"
-                        height="873"
-                    >
-                </div>
-
-            </div>
-
-            <div class="solution-orbit solution-orbit-one"></div>
-
-            <div class="solution-orbit solution-orbit-two"></div>
-
-            <div class="solution-core-content">
-
-                <span class="solution-core-label">
-                    AURAMIND
-                </span>
-
-                <strong>
-                    AI
-                </strong>
-
-                <small data-i18n="solution.coreText">
-                    Business System
-                </small>
-
-            </div>
-
-            <div class="solution-node solution-node-one">
-                <span data-i18n="solution.item1Title">Understand</span>
-            </div>
-
-            <div class="solution-node solution-node-two">
-                <span data-i18n="solution.item2Title">Remember</span>
-            </div>
-
-            <div class="solution-node solution-node-three">
-                <span data-i18n="solution.item3Title">Act</span>
-            </div>
-
-        </div>
-
-        <div class="solution-content">
-
-            <span
-                class="section-kicker"
-                data-i18n="solution.kicker"
-            >
-                THE AURAMIND SYSTEM
-            </span>
-
-            <h2 data-i18n="solution.title">
-                More than a chatbot.
-            </h2>
-
-            <p data-i18n="solution.description">
-                AuraMind connects AI conversations with the workflows
-                your business actually needs.
-            </p>
-
-            <div class="capability-list">
-
-                <div class="capability-item">
-
-                    <span class="capability-icon">
-                        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                            <circle cx="8.75" cy="8.75" r="5.25" stroke="currentColor" stroke-width="1.4"/>
-                            <path d="M16.5 16.5l-3.6-3.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-                        </svg>
-                    </span>
-
-                    <div>
-
-                        <h3 data-i18n="solution.item1Title">
-                            Understand
-                        </h3>
-
-                        <p data-i18n="solution.item1Text">
-                            Understand customer intent and context.
-                        </p>
-
+            <section id="about" aria-labelledby="solution-title" class="solution-section section">
+                <div class="container solution-container">
+                    <div class="solution-visual" data-animate="zoom-in">
+                        <div class="solution-core">
+                            <div class="solution-core-glow"></div>
+                            <div class="solution-core-media"><img src="images/ai-human-connection.jpg" alt="A human hand and a robotic hand reaching toward each other, representing AuraMind’s AI working alongside your team" data-i18n="alt.solution" data-i18n-attr="alt" loading="lazy" width="700" height="873" decoding="async"></div>
+                        </div>
+                        <div class="solution-orbit solution-orbit-one"></div>
+                        <div class="solution-orbit solution-orbit-two"></div>
+                        <div class="solution-core-content">
+                            <span class="solution-core-label">AURAMIND</span>
+                            <strong>AI</strong>
+                            <small data-i18n="solution.coreText">Business System</small>
+                        </div>
+                        <div class="solution-node solution-node-one"><span data-i18n="solution.item1Title">Understand</span></div>
+                        <div class="solution-node solution-node-two"><span data-i18n="solution.item2Title">Remember</span></div>
+                        <div class="solution-node solution-node-three"><span data-i18n="solution.item3Title">Act</span></div>
                     </div>
-
-                </div>
-
-                <div class="capability-item">
-
-                    <span class="capability-icon">
-                        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                            <path d="M4 5.75A1.75 1.75 0 0 1 5.75 4h8.5A1.75 1.75 0 0 1 16 5.75v10.6l-3.4-2.1a2 2 0 0 0-2.1 0L7 16.35V5.75Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                        </svg>
-                    </span>
-
-                    <div>
-
-                        <h3 data-i18n="solution.item2Title">
-                            Remember
-                        </h3>
-
-                        <p data-i18n="solution.item2Text">
-                            Keep relevant customer information across conversations.
-                        </p>
-
+                    <div class="solution-content">
+                        <span class="section-kicker" data-i18n="solution.kicker">THE AURAMIND SYSTEM</span>
+                        <h2 id="solution-title" data-i18n="solution.title">More than a chatbot.</h2>
+                        <p data-i18n="solution.description">AuraMind connects AI conversations with the workflows your business actually needs.</p>
+                        <div class="capability-list">
+                            <div class="capability-item">
+                                <span class="capability-icon">
+                                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                                        <circle cx="8.75" cy="8.75" r="5.25" stroke="currentColor" stroke-width="1.4"/>
+                                        <path d="M16.5 16.5l-3.6-3.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <h3 data-i18n="solution.item1Title">Understand</h3>
+                                    <p data-i18n="solution.item1Text">Understand customer intent and context.</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <span class="capability-icon">
+                                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false"><path d="M4 5.75A1.75 1.75 0 0 1 5.75 4h8.5A1.75 1.75 0 0 1 16 5.75v10.6l-3.4-2.1a2 2 0 0 0-2.1 0L7 16.35V5.75Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+                                </span>
+                                <div>
+                                    <h3 data-i18n="solution.item2Title">Remember</h3>
+                                    <p data-i18n="solution.item2Text">Keep relevant customer information across conversations.</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <span class="capability-icon">
+                                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false"><path d="M10.8 3 5 11.2h3.9L8.2 17l6.3-8.6h-4.1L10.8 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+                                </span>
+                                <div>
+                                    <h3 data-i18n="solution.item3Title">Act</h3>
+                                    <p data-i18n="solution.item3Text">Trigger the right business workflow at the right time.</p>
+                                </div>
+                            </div>
+                            <div class="capability-item">
+                                <span class="capability-icon">
+                                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                                        <circle cx="7.25" cy="6.5" r="2.35" stroke="currentColor" stroke-width="1.3"/>
+                                        <path d="M3.3 16c.5-2.6 2.1-4 3.95-4s3.45 1.4 3.95 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                                        <path d="M13 8.5l1.7 1.7L18 6.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                                <div>
+                                    <h3 data-i18n="solution.item4Title">Hand Off</h3>
+                                    <p data-i18n="solution.item4Text">Bring your team in when human involvement is needed.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
                 </div>
-
-                <div class="capability-item">
-
-                    <span class="capability-icon">
-                        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                            <path d="M10.8 3 5 11.2h3.9L8.2 17l6.3-8.6h-4.1L10.8 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
-                        </svg>
-                    </span>
-
-                    <div>
-
-                        <h3 data-i18n="solution.item3Title">
-                            Act
-                        </h3>
-
-                        <p data-i18n="solution.item3Text">
-                            Trigger the right business workflow at the right time.
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="capability-item">
-
-                    <span class="capability-icon">
-                        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                            <circle cx="7.25" cy="6.5" r="2.35" stroke="currentColor" stroke-width="1.3"/>
-                            <path d="M3.3 16c.5-2.6 2.1-4 3.95-4s3.45 1.4 3.95 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                            <path d="M13 8.5l1.7 1.7L18 6.8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </span>
-
-                    <div>
-
-                        <h3 data-i18n="solution.item4Title">
-                            Hand Off
-                        </h3>
-
-                        <p data-i18n="solution.item4Text">
-                            Bring your team in when human involvement is needed.
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================================================
+            </section>
+            <!-- =========================================================
      SERVICES
 ========================================================= -->
-
-<section
-    id="services"
-    class="services-section section"
->
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span
-                class="section-kicker"
-                data-i18n="services.kicker"
-            >
-                AI SOLUTIONS
-            </span>
-
-            <h2 data-i18n="services.title">
-                What can we automate?
-            </h2>
-            <p data-i18n="services.description">
-                Custom AI systems designed around the way your business operates.
-            </p>
-
-        </div>
-
-        <div class="services-grid">
-
-            <article
-                class="service-card featured"
-                data-animate="fade-up"
-            >
-
-                <div class="service-icon">
-                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                        <path d="M4 8a7 7 0 0 1 14 0v3.5a1.75 1.75 0 0 1-1.75 1.75H15v-5h3v-.25a6 6 0 0 0-12 0v.25h3v5H7.75A1.75 1.75 0 0 1 6 11.5V8Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
-                        <path d="M6 13.25V15a3 3 0 0 0 3 3h1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                    </svg>
+            <section id="services" aria-labelledby="services-title" class="services-section section">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker" data-i18n="services.kicker">AI SOLUTIONS</span>
+                        <h2 id="services-title" data-i18n="services.title">What can we automate?</h2>
+                        <p data-i18n="services.description">Custom AI systems designed around the way your business operates.</p>
+                    </div>
+                    <div class="services-grid">
+                        <article class="service-card featured" data-animate="fade-up">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                    <path d="M4 8a7 7 0 0 1 14 0v3.5a1.75 1.75 0 0 1-1.75 1.75H15v-5h3v-.25a6 6 0 0 0-12 0v.25h3v5H7.75A1.75 1.75 0 0 1 6 11.5V8Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+                                    <path d="M6 13.25V15a3 3 0 0 0 3 3h1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="services.card1Title">AI Customer Support</h3>
+                            <p data-i18n="services.card1Text">Answer customer questions instantly and keep conversations moving without putting more pressure on your team.</p>
+                            <a href="#contact" class="service-link" data-i18n="services.learnMore">Explore solution →</a>
+                        </article>
+                        <article class="service-card" data-animate="fade-up">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false"><path d="M6 16 16 6M16 6H9.5M16 6v6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <h3 data-i18n="services.card2Title">AI Lead Capture</h3>
+                            <p data-i18n="services.card2Text">Turn customer conversations into structured leads your business can actually follow up with.</p>
+                            <a href="#contact" class="service-link" data-i18n="services.learnMore">Explore solution →</a>
+                        </article>
+                        <article class="service-card" data-animate="fade-up">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                    <path d="M4.5 6.5h13l-1.2 8.4a1.75 1.75 0 0 1-1.73 1.5H7.43a1.75 1.75 0 0 1-1.73-1.5L4.5 6.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+                                    <path d="M7.5 6.5V5.75a3.5 3.5 0 0 1 7 0V6.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="services.card3Title">AI Ordering</h3>
+                            <p data-i18n="services.card3Text">Let customers place orders through natural conversation while your business receives the information it needs.</p>
+                            <a href="#contact" class="service-link" data-i18n="services.learnMore">Explore solution →</a>
+                        </article>
+                        <article class="service-card" data-animate="fade-up">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                    <path d="M16.2 7.2A5.75 5.75 0 1 0 17.5 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                    <path d="M16.2 4.2v3h-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="services.card4Title">AI Follow-Up</h3>
+                            <p data-i18n="services.card4Text">Automatically continue conversations and follow up with customers who need another touchpoint.</p>
+                            <a href="#contact" class="service-link" data-i18n="services.learnMore">Explore solution →</a>
+                        </article>
+                        <article class="service-card" data-animate="fade-up">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                    <rect x="4.25" y="5" width="13.5" height="12" rx="1.75" stroke="currentColor" stroke-width="1.3"/>
+                                    <path d="M4.25 8.75h13.5M7.5 4v2M14.5 4v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                                    <path d="M8 12l1.7 1.7L14 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="services.card5Title">AI Appointment Booking</h3>
+                            <p data-i18n="services.card5Text">Handle appointment requests and help customers find the next available step without manual back-and-forth.</p>
+                            <a href="#contact" class="service-link" data-i18n="services.learnMore">Explore solution →</a>
+                        </article>
+                        <article class="service-card" data-animate="fade-up">
+                            <div class="service-icon">
+                                <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                    <path d="M11 3.5l1.4 3.6 3.6 1.4-3.6 1.4L11 13.5 9.6 9.9 6 8.5l3.6-1.4L11 3.5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                                    <path d="M16.5 13l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7.7-1.8Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <h3 data-i18n="services.card6Title">Custom AI Agents</h3>
+                            <p data-i18n="services.card6Text">Build an AI workflow around the specific tasks, systems, and customer interactions your business needs.</p>
+                            <a href="#contact" class="service-link" data-i18n="services.learnMore">Explore solution →</a>
+                        </article>
+                    </div>
                 </div>
-
-                <h3 data-i18n="services.card1Title">
-                    AI Customer Support
-                </h3>
-
-                <p data-i18n="services.card1Text">
-                    Answer customer questions instantly and keep conversations
-                    moving without putting more pressure on your team.
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-link"
-                    data-i18n="services.learnMore"
-                >
-                    Explore solution →
-                </a>
-
-            </article>
-
-            <article
-                class="service-card"
-                data-animate="fade-up"
-            >
-
-                <div class="service-icon">
-                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                        <path d="M6 16 16 6M16 6H9.5M16 6v6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-
-                <h3 data-i18n="services.card2Title">
-                    AI Lead Capture
-                </h3>
-
-                <p data-i18n="services.card2Text">
-                    Turn customer conversations into structured leads
-                    your business can actually follow up with.
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-link"
-                    data-i18n="services.learnMore"
-                >
-                    Explore solution →
-                </a>
-
-            </article>
-
-            <article
-                class="service-card"
-                data-animate="fade-up"
-            >
-
-                <div class="service-icon">
-                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                        <path d="M4.5 6.5h13l-1.2 8.4a1.75 1.75 0 0 1-1.73 1.5H7.43a1.75 1.75 0 0 1-1.73-1.5L4.5 6.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
-                        <path d="M7.5 6.5V5.75a3.5 3.5 0 0 1 7 0V6.5" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                    </svg>
-                </div>
-
-                <h3 data-i18n="services.card3Title">
-                    AI Ordering
-                </h3>
-
-                <p data-i18n="services.card3Text">
-                    Let customers place orders through natural conversation
-                    while your business receives the information it needs.
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-link"
-                    data-i18n="services.learnMore"
-                >
-                    Explore solution →
-                </a>
-
-            </article>
-
-            <article
-                class="service-card"
-                data-animate="fade-up"
-            >
-
-                <div class="service-icon">
-                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                        <path d="M16.2 7.2A5.75 5.75 0 1 0 17.5 11" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
-                        <path d="M16.2 4.2v3h-3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-
-                <h3 data-i18n="services.card4Title">
-                    AI Follow-Up
-                </h3>
-
-                <p data-i18n="services.card4Text">
-                    Automatically continue conversations and follow up
-                    with customers who need another touchpoint.
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-link"
-                    data-i18n="services.learnMore"
-                >
-                    Explore solution →
-                    </a>
-
-            </article>
-
-            <article
-                class="service-card"
-                data-animate="fade-up"
-            >
-
-                <div class="service-icon">
-                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                        <rect x="4.25" y="5" width="13.5" height="12" rx="1.75" stroke="currentColor" stroke-width="1.3"/>
-                        <path d="M4.25 8.75h13.5M7.5 4v2M14.5 4v2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                        <path d="M8 12l1.7 1.7L14 10" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-
-                <h3 data-i18n="services.card5Title">
-                    AI Appointment Booking
-                </h3>
-
-                <p data-i18n="services.card5Text">
-                    Handle appointment requests and help customers
-                    find the next available step without manual back-and-forth.
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-link"
-                    data-i18n="services.learnMore"
-                >
-                    Explore solution →
-                </a>
-
-            </article>
-
-            <article
-                class="service-card"
-                data-animate="fade-up"
-            >
-
-                <div class="service-icon">
-                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                        <path d="M11 3.5l1.4 3.6 3.6 1.4-3.6 1.4L11 13.5 9.6 9.9 6 8.5l3.6-1.4L11 3.5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
-                        <path d="M16.5 13l.7 1.8 1.8.7-1.8.7-.7 1.8-.7-1.8-1.8-.7 1.8-.7.7-1.8Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-
-                <h3 data-i18n="services.card6Title">
-                    Custom AI Agents
-                </h3>
-
-                <p data-i18n="services.card6Text">
-                    Build an AI workflow around the specific tasks,
-                    systems, and customer interactions your business needs.
-                </p>
-
-                <a
-                    href="#contact"
-                    class="service-link"
-                    data-i18n="services.learnMore"
-                >
-                    Explore solution →
-                </a>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================================================
+            </section>
+            <!-- =========================================================
      INDUSTRIES
 ========================================================= -->
-
-<section
-    id="industries"
-    class="industries-section section"
->
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span
-                class="section-kicker"
-                data-i18n="industries.kicker"
-            >
-                BUILT FOR REAL BUSINESSES
-            </span>
-
-            <h2 data-i18n="industries.title">
-                AI that fits your industry.
-            </h2>
-
-            <p data-i18n="industries.description">
-                The right automation depends on how your customers
-                interact with your business.
-            </p>
-
-        </div>
-
-        <div class="industries-grid">
-
-            <article
-                class="industry-card"
-                data-animate="fade-up"
-            >
-
-                <div class="industry-media">
-
-                    <img
-                        src="images/industry-restaurants.jpg"
-                        alt="An assortment of appetizers and entrees plated for a restaurant, including chicken tenders, wings, fried bites, and fries"
-                        loading="lazy"
-                        width="734"
-                        height="412"
-                    >
-
-                    <span class="industry-icon">
-                        <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                            <path d="M6.5 4v6.2a1.75 1.75 0 0 1-1.75 1.75V4M4.75 11.95V18M8.25 4v14M14 4c-1.4 0-2.5 2-2.5 5s1.1 5 2.5 5v5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M17 4v14" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
-                        </svg>
-                    </span>
-
+            <section id="industries" aria-labelledby="industries-title" class="industries-section section">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker" data-i18n="industries.kicker">BUILT FOR REAL BUSINESSES</span>
+                        <h2 id="industries-title" data-i18n="industries.title">AI that fits your industry.</h2>
+                        <p data-i18n="industries.description">The right automation depends on how your customers interact with your business.</p>
+                    </div>
+                    <div class="industries-grid">
+                        <article class="industry-card featured" data-animate="fade-up">
+                            <div class="industry-media">
+                                <img src="images/industry-restaurants.jpg" alt="An assortment of appetizers and entrees plated for a restaurant, including chicken tenders, wings, fried bites and fries" data-i18n="alt.restaurants" data-i18n-attr="alt" loading="lazy" width="734" height="412" decoding="async">
+                                <span class="industry-icon">
+                                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                        <path d="M6.5 4v6.2a1.75 1.75 0 0 1-1.75 1.75V4M4.75 11.95V18M8.25 4v14M14 4c-1.4 0-2.5 2-2.5 5s1.1 5 2.5 5v5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M17 4v14" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="industry-body">
+                                <h3 data-i18n="industries.restaurantTitle">Restaurants</h3>
+                                <p data-i18n="industries.restaurantText">Customer support, ordering, delivery information, and automated order workflows.</p>
+                            </div>
+                        </article>
+                        <article class="industry-card" data-animate="fade-up">
+                            <div class="industry-media">
+                                <img src="images/industry-real-estate.jpg" alt="A miniature house model beside stacked coins and a rising growth chart, representing real estate investment" data-i18n="alt.realEstate" data-i18n-attr="alt" loading="lazy" width="736" height="413" decoding="async">
+                                <span class="industry-icon">
+                                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                        <path d="M4 18V8.2a1 1 0 0 1 .45-.83l6-4a1 1 0 0 1 1.1 0l6 4a1 1 0 0 1 .45.83V18" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
+                                        <path d="M2.5 18h17M9 18v-4.25a2 2 0 0 1 4 0V18" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.5 10.5h1M12.5 10.5h1" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="industry-body">
+                                <h3 data-i18n="industries.realEstateTitle">Real Estate</h3>
+                                <p data-i18n="industries.realEstateText">Capture property inquiries, qualify leads, and keep prospects moving.</p>
+                            </div>
+                        </article>
+                        <article class="industry-card" data-animate="fade-up">
+                            <div class="industry-media">
+                                <img src="images/industry-clinics.jpg" alt="A modern, softly lit clinic reception desk with curved detailing and ambient lighting" data-i18n="alt.clinics" data-i18n-attr="alt" loading="lazy" width="736" height="736" decoding="async">
+                                <span class="industry-icon">
+                                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                        <path d="M11 4.5c-1.9-2.4-6.5-1.7-6.5 2.4 0 3.4 4 6.4 6.5 8.6 2.5-2.2 6.5-5.2 6.5-8.6 0-4.1-4.6-4.8-6.5-2.4Z" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
+                                        <path d="M8.5 9.5h1.4l.9-1.6 1.2 3 .9-1.4h1.1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="industry-body">
+                                <h3 data-i18n="industries.clinicTitle">Clinics</h3>
+                                <p data-i18n="industries.clinicText">Answer common questions, manage requests, and support appointment workflows.</p>
+                            </div>
+                        </article>
+                        <article class="industry-card" data-animate="fade-up">
+                            <div class="industry-media">
+                                <img src="images/industry-retail.jpg" alt="A smiling small business owner in an apron standing behind a counter with a laptop, in a shop lined with plants" data-i18n="alt.retail" data-i18n-attr="alt" loading="lazy" width="735" height="490" decoding="async">
+                                <span class="industry-icon">
+                                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                        <path d="M5.5 8h11l-.8 8.6a1.5 1.5 0 0 1-1.5 1.4H7.8a1.5 1.5 0 0 1-1.5-1.4L5.5 8Z" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
+                                        <path d="M8.25 8V6.25a2.75 2.75 0 0 1 5.5 0V8" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="industry-body">
+                                <h3 data-i18n="industries.retailTitle">Retail & Local Business</h3>
+                                <p data-i18n="industries.retailText">Automate everyday customer conversations, inquiries, and repetitive tasks.</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-
-                <div class="industry-body">
-
-                    <h3 data-i18n="industries.restaurantTitle">
-                        Restaurants
-                    </h3>
-
-                    <p data-i18n="industries.restaurantText">
-                        Customer support, ordering, delivery information,
-                        and automated order workflows.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article
-                class="industry-card"
-                data-animate="fade-up"
-            >
-
-                <div class="industry-media">
-
-                    <img
-                        src="images/industry-real-estate.jpg"
-                        alt="A miniature house model beside stacked coins and a rising growth chart, representing real estate investment"
-                        loading="lazy"
-                        width="736"
-                        height="413"
-                    >
-
-                    <span class="industry-icon">
-                        <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                            <path d="M4 18V8.2a1 1 0 0 1 .45-.83l6-4a1 1 0 0 1 1.1 0l6 4a1 1 0 0 1 .45.83V18" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
-                            <path d="M2.5 18h17M9 18v-4.25a2 2 0 0 1 4 0V18" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
-                            <path d="M8.5 10.5h1M12.5 10.5h1" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
-                        </svg>
-                    </span>
-
-                </div>
-
-                <div class="industry-body">
-
-                    <h3 data-i18n="industries.realEstateTitle">
-                        Real Estate
-                    </h3>
-                    <p data-i18n="industries.realEstateText">
-                        Capture property inquiries, qualify leads,
-                        and keep prospects moving.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article
-                class="industry-card"
-                data-animate="fade-up"
-            >
-
-                <div class="industry-media">
-
-                    <img
-                        src="images/industry-clinics.jpg"
-                        alt="A modern, softly lit clinic or spa reception desk with curved detailing and ambient lighting"
-                        loading="lazy"
-                        width="736"
-                        height="736"
-                    >
-
-                    <span class="industry-icon">
-                        <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                            <path d="M11 4.5c-1.9-2.4-6.5-1.7-6.5 2.4 0 3.4 4 6.4 6.5 8.6 2.5-2.2 6.5-5.2 6.5-8.6 0-4.1-4.6-4.8-6.5-2.4Z" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
-                            <path d="M8.5 9.5h1.4l.9-1.6 1.2 3 .9-1.4h1.1" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
-                        </svg>
-                    </span>
-
-                </div>
-
-                <div class="industry-body">
-
-                    <h3 data-i18n="industries.clinicTitle">
-                        Clinics
-                    </h3>
-
-                    <p data-i18n="industries.clinicText">
-                        Answer common questions, manage requests,
-                        and support appointment workflows.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article
-                class="industry-card"
-                data-animate="fade-up"
-            >
-
-                <div class="industry-media">
-
-                    <img
-                        src="images/industry-retail.jpg"
-                        alt="A smiling small business owner in an apron standing behind a counter with a laptop, in a shop lined with plants"
-                        loading="lazy"
-                        width="735"
-                        height="490"
-                    >
-
-                    <span class="industry-icon">
-                        <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                            <path d="M5.5 8h11l-.8 8.6a1.5 1.5 0 0 1-1.5 1.4H7.8a1.5 1.5 0 0 1-1.5-1.4L5.5 8Z" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
-                            <path d="M8.25 8V6.25a2.75 2.75 0 0 1 5.5 0V8" stroke="currentColor" stroke-width="1.25" stroke-linecap="round"/>
-                        </svg>
-                    </span>
-
-                </div>
-
-                <div class="industry-body">
-
-                    <h3 data-i18n="industries.retailTitle">
-                        Retail & Local Business
-                    </h3>
-
-                    <p data-i18n="industries.retailText">
-                        Automate everyday customer conversations,
-                        inquiries, and repetitive tasks.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================================================
+            </section>
+            <!-- =========================================================
      HOW IT WORKS
 ========================================================= -->
-
-<section
-    id="how-it-works"
-    class="steps-section section"
->
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span
-                class="section-kicker"
-                data-i18n="steps.kicker"
-            >
-                HOW IT WORKS
-            </span>
-
-            <h2 data-i18n="steps.title">
-                From conversation to action.
-            </h2>
-
-            <p data-i18n="steps.description">
-                AuraMind connects the customer conversation to the
-                business action that needs to happen next.
-            </p>
-
-        </div>
-
-        <div class="steps-grid">
-
-            <article
-                class="step-card"
-                data-animate="fade-up"
-            >
-
-                <div class="step-marker">
-                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                        <path d="M4 6.5h14v9H9.5L6 19v-3.5H4v-9Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                    </svg>
+            <section id="how-it-works" aria-labelledby="steps-title" class="steps-section section">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker" data-i18n="steps.kicker">HOW IT WORKS</span>
+                        <h2 id="steps-title" data-i18n="steps.title">From conversation to action.</h2>
+                        <p data-i18n="steps.description">AuraMind connects the customer conversation to the business action that needs to happen next.</p>
+                    </div>
+                    <div class="steps-grid">
+                        <article class="step-card" data-animate="fade-up">
+                            <div class="step-marker">
+                                <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false"><path d="M4 6.5h14v9H9.5L6 19v-3.5H4v-9Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <h3 data-i18n="steps.step1Title">Customer reaches out</h3>
+                                <p data-i18n="steps.step1Text">A customer starts a conversation through a channel your business already uses.</p>
+                            </div>
+                        </article>
+                        <article class="step-card" data-animate="fade-up">
+                            <div class="step-marker">
+                                <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false">
+                                    <path d="M11 3.8l1.55 3.95L16.5 9.3l-3.95 1.55L11 14.8l-1.55-3.95L5.5 9.3l3.95-1.55L11 3.8Z" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
+                                    <path d="M17 13.5l.75 1.9L19.65 16.15l-1.9.75L17 18.8l-.75-1.9-1.9-.75 1.9-.75.75-1.9Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="step-content">
+                                <h3 data-i18n="steps.step2Title">AI understands</h3>
+                                <p data-i18n="steps.step2Text">AuraMind understands the request and responds naturally using the information available to it.</p>
+                            </div>
+                        </article>
+                        <article class="step-card" data-animate="fade-up">
+                            <div class="step-marker">
+                                <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false"><path d="M6.5 4.75A1.75 1.75 0 0 1 8.25 3h5.5a1.75 1.75 0 0 1 1.75 1.75V18l-4.5-2.8L6.5 18V4.75Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <h3 data-i18n="steps.step3Title">Information is remembered</h3>
+                                <p data-i18n="steps.step3Text">Relevant customer information can be stored and used in future conversations.</p>
+                            </div>
+                        </article>
+                        <article class="step-card" data-animate="fade-up">
+                            <div class="step-marker">
+                                <svg viewBox="0 0 22 22" fill="none" aria-hidden="true" focusable="false"><path d="M4.5 11.5 9 16l8.5-10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            </div>
+                            <div class="step-content">
+                                <h3 data-i18n="steps.step4Title">Your business gets the result</h3>
+                                <p data-i18n="steps.step4Text">Leads are captured, orders are processed, workflows are triggered, or your team is notified.</p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-
-                <div class="step-content">
-
-                    <h3 data-i18n="steps.step1Title">
-                        Customer reaches out
-                    </h3>
-
-                    <p data-i18n="steps.step1Text">
-                        A customer starts a conversation through a channel
-                        your business already uses.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article
-                class="step-card"
-                data-animate="fade-up"
-            >
-
-                <div class="step-marker">
-                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                        <path d="M11 3.8l1.55 3.95L16.5 9.3l-3.95 1.55L11 14.8l-1.55-3.95L5.5 9.3l3.95-1.55L11 3.8Z" stroke="currentColor" stroke-width="1.25" stroke-linejoin="round"/>
-                        <path d="M17 13.5l.75 1.9L19.65 16.15l-1.9.75L17 18.8l-.75-1.9-1.9-.75 1.9-.75.75-1.9Z" stroke="currentColor" stroke-width="1.1" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-
-                <div class="step-content">
-
-                    <h3 data-i18n="steps.step2Title">
-                        AI understands
-                    </h3>
-
-                    <p data-i18n="steps.step2Text">
-                        AuraMind understands the request and responds
-                        naturally using the information available to it.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article
-                class="step-card"
-                data-animate="fade-up"
-            >
-
-                <div class="step-marker">
-                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                        <path d="M6.5 4.75A1.75 1.75 0 0 1 8.25 3h5.5a1.75 1.75 0 0 1 1.75 1.75V18l-4.5-2.8L6.5 18V4.75Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-
-                <div class="step-content">
-
-                    <h3 data-i18n="steps.step3Title">
-                        Information is remembered
-                    </h3>
-
-                    <p data-i18n="steps.step3Text">
-                        Relevant customer information can be stored
-                        and used in future conversations.
-                    </p>
-
-                </div>
-
-            </article>
-
-            <article
-                class="step-card"
-                data-animate="fade-up"
-            >
-
-                <div class="step-marker">
-                    <svg viewBox="0 0 22 22" fill="none" aria-hidden="true">
-                        <path d="M4.5 11.5 9 16l8.5-10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </div>
-
-                <div class="step-content">
-
-                    <h3 data-i18n="steps.step4Title">
-                        Your business gets the result
-                    </h3>
-
-                    <p data-i18n="steps.step4Text">
-                        Leads are captured, orders are processed,
-                        workflows are triggered, or your team is notified.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================================================
+            </section>
+            <!-- =========================================================
      WHY AURAMIND
 ========================================================= -->
-
-<section
-    class="why-section section"
->
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span
-                class="section-kicker"
-                data-i18n="why.kicker"
-            >
-                WHY AURAMIND
-            </span>
-
-            <h2 data-i18n="why.title">
-                AI that works the way your business works.
-            </h2>
-
-            <p data-i18n="why.description">
-                Your business is unique. Your automation should be too.
-            </p>
-
-        </div>
-
-        <div class="why-grid">
-
-            <article
-                class="why-card"
-                data-animate="fade-up"
-            >
-
-                <span class="why-index">
-                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                        <path d="M10 2.5 12 6l3.8.6-2.7 2.7.65 3.8L10 11.3l-3.4 1.8.65-3.8L4.5 6.6 8.3 6 10 2.5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
-                        <path d="M10 15v2.5M6.5 17.5h7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
-                    </svg>
-                </span>
-
-                <h3 data-i18n="why.card1Title">
-                    Custom
-                </h3>
-
-                <p data-i18n="why.card1Text">
-                    Built around your business, customers,
-                    information, and workflows.
-                </p>
-
-            </article>
-
-            <article
-                class="why-card"
-                data-animate="fade-up"
-            >
-
-                <span class="why-index">
-                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                        <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.3"/>
-                        <path d="M10 6v4l2.8 1.7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </span>
-
-                <h3 data-i18n="why.card2Title">
-                    Always On
-                </h3>
-
-                <p data-i18n="why.card2Text">
-                    Give customers a way to get answers
-                    and start conversations outside business hours.
-                </p>
-
-            </article>
-
-            <article
-                class="why-card"
-                data-animate="fade-up"
-            >
-
-                <span class="why-index">
-                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                        <path d="M8.2 11.8 11.8 8.2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                        <path d="M9.3 6.1 10.7 4.7a2.6 2.6 0 0 1 3.7 3.7l-1.4 1.4M10.7 13.9l-1.4 1.4a2.6 2.6 0 0 1-3.7-3.7l1.4-1.4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </span>
-
-                <h3 data-i18n="why.card3Title">
-                    Connected
-                </h3>
-
-                <p data-i18n="why.card3Text">
-                    Connect customer conversations to the tools
-                    and workflows your business relies on.
-                </p>
-
-            </article>
-
-            <article
-                class="why-card"
-                data-animate="fade-up"
-            >
-
-                <span class="why-index">
-                    <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-                        <circle cx="10" cy="6.7" r="2.7" stroke="currentColor" stroke-width="1.3"/>
-                        <path d="M4.8 16.5c.7-3.1 2.7-4.8 5.2-4.8s4.5 1.7 5.2 4.8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
-                    </svg>
-                </span>
-
-                <h3 data-i18n="why.card4Title">
-                    Human When Needed
-                </h3>
-
-                <p data-i18n="why.card4Text">
-                    Automation should support your team,
-                    not prevent human involvement when it matters.
-                </p>
-
-            </article>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================================================
+            <section id="why-aura-mind" aria-labelledby="why-title" class="why-section section">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="section-kicker" data-i18n="why.kicker">WHY AURAMIND</span>
+                        <h2 id="why-title" data-i18n="why.title">AI that works the way your business works.</h2>
+                        <p data-i18n="why.description">Your business is unique. Your automation should be too.</p>
+                    </div>
+                    <div class="why-grid">
+                        <article class="why-card" data-animate="fade-up">
+                            <span class="why-index">
+                                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                                    <path d="M10 2.5 12 6l3.8.6-2.7 2.7.65 3.8L10 11.3l-3.4 1.8.65-3.8L4.5 6.6 8.3 6 10 2.5Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/>
+                                    <path d="M10 15v2.5M6.5 17.5h7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <h3 data-i18n="why.card1Title">Custom</h3>
+                            <p data-i18n="why.card1Text">Built around your business, customers, information, and workflows.</p>
+                        </article>
+                        <article class="why-card" data-animate="fade-up">
+                            <span class="why-index">
+                                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                                    <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="1.3"/>
+                                    <path d="M10 6v4l2.8 1.7" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <h3 data-i18n="why.card2Title">Always On</h3>
+                            <p data-i18n="why.card2Text">Give customers a way to get answers and start conversations outside business hours.</p>
+                        </article>
+                        <article class="why-card" data-animate="fade-up">
+                            <span class="why-index">
+                                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                                    <path d="M8.2 11.8 11.8 8.2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                                    <path d="M9.3 6.1 10.7 4.7a2.6 2.6 0 0 1 3.7 3.7l-1.4 1.4M10.7 13.9l-1.4 1.4a2.6 2.6 0 0 1-3.7-3.7l1.4-1.4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <h3 data-i18n="why.card3Title">Connected</h3>
+                            <p data-i18n="why.card3Text">Connect customer conversations to the tools and workflows your business relies on.</p>
+                        </article>
+                        <article class="why-card" data-animate="fade-up">
+                            <span class="why-index">
+                                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+                                    <circle cx="10" cy="6.7" r="2.7" stroke="currentColor" stroke-width="1.3"/>
+                                    <path d="M4.8 16.5c.7-3.1 2.7-4.8 5.2-4.8s4.5 1.7 5.2 4.8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+                                </svg>
+                            </span>
+                            <h3 data-i18n="why.card4Title">Human When Needed</h3>
+                            <p data-i18n="why.card4Text">Automation should support your team, not prevent human involvement when it matters.</p>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- =========================================================
      AI DEMO
 ========================================================= -->
-
-<section
-    class="demo-section section"
->
-
-    <div class="container">
-
-        <div class="demo-panel">
-            <div class="demo-copy">
-
-                <span
-                    class="section-kicker"
-                    data-i18n="demo.kicker"
-                >
-                    SEE IT IN ACTION
-                </span>
-
-                <h2 data-i18n="demo.title">
-                    Your website should demonstrate your AI.
-                </h2>
-
-                <p data-i18n="demo.description">
-                    Instead of only telling visitors what AuraMind does,
-                    let them experience how an AI business assistant can respond.
-                </p>
-
-                <a
-                    href="#contact"
-                    class="btn btn-primary"
-                >
-
-                    <span data-i18n="demo.button">
-                        Talk to AuraMind
-                    </span>
-
-                    <span aria-hidden="true">
-                        →
-                    </span>
-
-                </a>
-
-            </div>
-
-            <div class="demo-preview">
-
-                <div class="demo-window">
-
-                    <div class="demo-window-header">
-
-                        <div class="demo-window-brand">
-                            <span class="demo-avatar">
-                                A
-                            </span>
-
-                            <div>
-
-                                <strong>
-                                    AuraMind AI
-                                </strong>
-
-                                <small data-i18n="demo.online">
-                                    Online
-                                </small>
-
+            <section id="demo" aria-labelledby="demo-title" class="demo-section section">
+                <div class="container">
+                    <div class="demo-panel">
+                        <div class="demo-copy">
+                            <span class="section-kicker" data-i18n="demo.kicker">SEE IT IN ACTION</span>
+                            <h2 id="demo-title" data-i18n="demo.title">Your website should demonstrate your AI.</h2>
+                            <p data-i18n="demo.description">Instead of only telling visitors what AuraMind does, let them experience how an AI business assistant can respond.</p>
+                            <a href="#contact" class="btn btn-primary">
+                                <span data-i18n="demo.button">Talk to AuraMind</span>
+                                <span aria-hidden="true">→</span>
+                            </a>
+                        </div>
+                        <div class="demo-preview">
+                            <div class="demo-window">
+                                <div class="demo-window-header">
+                                    <div class="demo-window-brand">
+                                        <span class="demo-avatar" aria-hidden="true">A</span>
+                                        <div>
+                                            <strong>AuraMind AI</strong>
+                                            <small data-i18n="demo.online">Online</small>
+                                        </div>
+                                    </div>
+                                    <span class="demo-status" aria-hidden="true">●</span>
+                                </div>
+                                <div class="demo-messages">
+                                    <div class="demo-message visitor"><span data-i18n="demo.message1">What can you automate for my business?</span></div>
+                                    <div class="demo-message assistant"><span data-i18n="demo.message2">I can help automate customer support, lead capture, orders, appointments, follow-ups, and other repetitive workflows.</span></div>
+                                    <div class="demo-suggestion-row">
+                                        <span data-i18n="demo.suggestion1">Customer support</span>
+                                        <span data-i18n="demo.suggestion2">Lead capture</span>
+                                        <span data-i18n="demo.suggestion3">Orders</span>
+                                    </div>
+                                </div>
                             </div>
-
                         </div>
-
-                        <span class="demo-status">
-                            ●
-                        </span>
-
                     </div>
-
-                    <div class="demo-messages">
-
-                        <div class="demo-message visitor">
-
-                            <span data-i18n="demo.message1">
-                                What can you automate for my business?
-                            </span>
-
-                        </div>
-
-                        <div class="demo-message assistant">
-
-                            <span data-i18n="demo.message2">
-                                I can help automate customer support,
-                                lead capture, orders, appointments,
-                                follow-ups, and other repetitive workflows.
-                            </span>
-
-                        </div>
-
-                        <div class="demo-suggestion-row">
-
-                            <span data-i18n="demo.suggestion1">
-                                Customer support
-                            </span>
-
-                            <span data-i18n="demo.suggestion2">
-                                Lead capture
-                            </span>
-
-                            <span data-i18n="demo.suggestion3">
-                                Orders
-                            </span>
-
-                        </div>
-
-                    </div>
-
                 </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- =========================================================
+            </section>
+            <section id="pricing" class="section pricing-preview" aria-labelledby="pricing-title">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2 id="pricing-title" data-i18n="preview.title">Simple, transparent pricing</h2>
+                        <p data-i18n="preview.description">Three packages, one setup fee. Hosting, maintenance and small updates are always included.</p>
+                    </div>
+                    <div class="x-grid">
+                        <a class="x-card" href="pricing.html">
+                            <h3 class="x-name">Starter</h3>
+                            <div class="x-price">$<b dir="ltr" data-i18n="pricing.starterPrice">99.90</b><span data-i18n="pricing.perMonth">/ month</span></div>
+                            <p data-i18n="preview.d1">WhatsApp AI assistant, FAQs and lead capture.</p>
+                        </a>
+                        <a class="x-card f" href="pricing.html">
+                            <span class="x-pop" data-i18n="pricing.popular">Most popular</span>
+                            <h3 class="x-name">Business</h3>
+                            <div class="x-price">$<b dir="ltr" data-i18n="pricing.businessPrice">199.90</b><span data-i18n="pricing.perMonth">/ month</span></div>
+                            <p data-i18n="preview.d2">Everything in Starter, plus three languages, booking and instant lead alerts.</p>
+                        </a>
+                        <a class="x-card" href="pricing.html">
+                            <h3 class="x-name">Pro</h3>
+                            <div class="x-price">$<b dir="ltr" data-i18n="pricing.proPrice">300.00</b><span data-i18n="pricing.perMonth">/ month</span></div>
+                            <p data-i18n="preview.d3">Everything in Business, plus CRM / Google Sheets, follow-ups and priority support.</p>
+                        </a>
+                    </div>
+                    <div class="x-foot">
+                        <small data-i18n="preview.setup">+ $200 one-time setup fee on every package</small>
+                        <a class="btn btn-secondary" href="pricing.html" data-i18n="preview.all">See full pricing</a>
+                    </div>
+                </div>
+            </section>
+            <section id="faq" class="section faq-section" aria-labelledby="faq-title">
+                <div class="container">
+                    <div class="section-heading">
+                        <h2 id="faq-title" data-i18n="faq.title">Common questions</h2>
+                        <p data-i18n="faq.description">Straight answers before you get in touch.</p>
+                    </div>
+                    <div class="x-faq">
+                        <details>
+                            <summary data-i18n="faq.q1">What does the setup fee cover?</summary>
+                            <p data-i18n="faq.a1">It is a one-time $200 fee that applies to every package. After that, the monthly fee covers hosting, maintenance and small updates.</p>
+                        </details>
+                        <details>
+                            <summary data-i18n="faq.q2">Which languages can the assistant use?</summary>
+                            <p data-i18n="faq.a2">Starter supports up to 2 languages. Business and Pro support English, Turkish and Arabic.</p>
+                        </details>
+                        <details>
+                            <summary data-i18n="faq.q3">Can my team take over a conversation?</summary>
+                            <p data-i18n="faq.a3">Yes. The assistant handles routine questions, and your team steps in whenever a person is needed. On Business and Pro you also get instant lead notifications.</p>
+                        </details>
+                        <details>
+                            <summary data-i18n="faq.q4">How do I get started?</summary>
+                            <p data-i18n="faq.a4">Fill in the short form below. It opens WhatsApp so we can reply directly, usually within a few hours.</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+            <!-- =========================================================
      CONTACT
 ========================================================= -->
-
-<section
-    id="contact"
-    class="contact-section section"
->
-
-    <div class="container">
-
-        <div class="contact-header">
-
-            <span
-                class="section-kicker"
-                data-i18n="contact.kicker"
-            >
-                LET'S BUILD SOMETHING
-            </span>
-
-            <h2 data-i18n="contact.title">
-                What could your business automate?
-            </h2>
-
-            <p data-i18n="contact.description">
-                Tell us a little about your business and we'll help
-                identify where AI can make the biggest difference.
-            </p>
-
-        </div>
-
-        <div class="contact-container">
-
-            <div class="lead-form-wrap">
-
-                <div class="form-touch" aria-hidden="true">
-                    <img
-                        src="images/robot-hand-star.jpg"
-                        alt=""
-                        loading="lazy"
-                        width="731"
-                        height="1280"
-                    >
+            <section id="contact" aria-labelledby="contact-title" class="contact-section section">
+                <div class="container">
+                    <div class="contact-header">
+                        <span class="section-kicker" data-i18n="contact.kicker">LET'S BUILD SOMETHING</span>
+                        <h2 id="contact-title" data-i18n="contact.title">What could your business automate?</h2>
+                        <p data-i18n="contact.description">Tell us a little about your business and we'll help identify where AI can make the biggest difference.</p>
+                    </div>
+                    <div class="contact-container">
+                        <div class="lead-form-wrap">
+                            <div class="form-touch" aria-hidden="true"><img src="images/robot-hand-star.jpg" alt="" loading="lazy" width="731" height="1280" decoding="async"></div>
+                            <form class="lead-form" id="leadForm" aria-labelledby="form-title">
+                                <div class="lead-form-header">
+                                    <span class="form-label">AURAMIND AI</span>
+                                    <h3 id="form-title" data-i18n="contact.formTitle">Start your AI automation plan.</h3>
+                                    <small id="form-subtitle" data-i18n="contact.formSubtitle">A few details are all we need to understand what you want to automate.</small>
+                                </div>
+                                <div class="lead-form-grid">
+                                    <label for="name">
+                                        <span data-i18n="contact.formName">Your name</span>
+                                        <input type="text" id="name" name="name" required maxlength="80" autocomplete="name" placeholder="Your name" data-i18n-placeholder="contact.formNamePlaceholder">
+                                    </label>
+                                    <label for="business">
+                                        <span data-i18n="contact.formBusiness">Business name</span>
+                                        <input type="text" id="business" name="business" required maxlength="80" autocomplete="organization" placeholder="Your business" data-i18n-placeholder="contact.formBusinessPlaceholder">
+                                    </label>
+                                    <label for="business-type">
+                                        <span data-i18n="contact.formType">Business type</span>
+                                        <select id="business-type" name="type" required>
+                                            <option value="" data-i18n="contact.formTypePlaceholder">Select one</option>
+                                            <option value="Restaurant" data-i18n="contact.typeRestaurant">Restaurant</option>
+                                            <option value="Real Estate" data-i18n="contact.typeRealEstate">Real Estate</option>
+                                            <option value="Clinic" data-i18n="contact.typeClinic">Clinic</option>
+                                            <option value="Retail & Local Business" data-i18n="contact.typeRetail">Retail / Local Business</option>
+                                            <option value="Other" data-i18n="contact.typeOther">Other</option>
+                                        </select>
+                                    </label>
+                                    <label for="automation-goal">
+                                        <span data-i18n="contact.formGoal">What would you like to automate?</span>
+                                        <select id="automation-goal" name="goal" required>
+                                            <option value="" data-i18n="contact.formGoalPlaceholder">Select one</option>
+                                            <option value="Customer support" data-i18n="contact.goalSupport">Customer support</option>
+                                            <option value="Lead capture" data-i18n="contact.goalLeads">Lead capture</option>
+                                            <option value="Orders" data-i18n="contact.goalOrders">Orders</option>
+                                            <option value="Appointments" data-i18n="contact.goalAppointments">Appointments</option>
+                                            <option value="Other" data-i18n="contact.goalOther">Other</option>
+                                        </select>
+                                    </label>
+                                    <label class="full" for="phone">
+                                        <span data-i18n="contact.formWhatsapp">WhatsApp number</span>
+                                        <input type="tel" id="phone" name="phone" required inputmode="tel" minlength="7" maxlength="24" autocomplete="tel" placeholder="+90 ..." data-i18n-placeholder="contact.formWhatsappPlaceholder">
+                                    </label>
+                                </div>
+                                <button type="submit" class="btn btn-primary form-submit">
+                                    <span data-i18n="contact.formSubmit">Request My Free AI Consultation</span>
+                                    <span aria-hidden="true">→</span>
+                                </button>
+                                <p class="form-note" data-i18n="contact.formNote">Your request will open in WhatsApp so we can respond directly.</p>
+                                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                            </form>
+                        </div>
+                        <div class="contact-info-grid">
+                            <a href="mailto:Auramind.cy@gmail.com" class="contact-info-item" data-animate="fade-up">
+                                <div class="contact-info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <rect x="3.5" y="5.5" width="17" height="13" rx="2" stroke="currentColor" stroke-width="1.3"/>
+                                        <path d="M4.5 7l7.5 6 7.5-6" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-info-text">
+                                    <small data-i18n="contact.emailLabel">Email</small>
+                                    <strong>Auramind.cy@gmail.com</strong>
+                                </div>
+                            </a>
+                            <a href="tel:+905488630491" class="contact-info-item" data-animate="fade-up">
+                                <div class="contact-info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none"><path d="M6 4.5h3l1.5 4-2 1.5a11 11 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4 6.7 2 2 0 0 1 6 4.5Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+                                </div>
+                                <div class="contact-info-text">
+                                    <small data-i18n="contact.phoneLabel">Phone / WhatsApp</small>
+                                    <strong>+90 548 863 0491</strong>
+                                </div>
+                            </a>
+                            <div class="contact-info-item" data-animate="fade-up">
+                                <div class="contact-info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 21s-6.5-5.6-6.5-10.8A6.5 6.5 0 0 1 12 3.7a6.5 6.5 0 0 1 6.5 6.5C18.5 15.4 12 21 12 21Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>
+                                        <circle cx="12" cy="10.4" r="2.2" stroke="currentColor" stroke-width="1.3"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-info-text">
+                                    <small data-i18n="contact.locationLabel">Location</small>
+                                    <strong data-i18n="contact.locationValue">Lefkoşa, Northern Cyprus</strong>
+                                </div>
+                            </div>
+                            <div class="contact-info-item" data-animate="fade-up">
+                                <div class="contact-info-icon">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <circle cx="12" cy="12" r="7.5" stroke="currentColor" stroke-width="1.3"/>
+                                        <path d="M12 7.5V12l3 2" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="contact-info-text">
+                                    <small data-i18n="contact.availabilityLabel">Availability</small>
+                                    <strong data-i18n="contact.availabilityValue">Replies within a few hours, every day</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-socials" data-animate="fade-up">
+                            <span class="contact-socials-label" data-i18n="contact.followLabel">Follow us</span>
+                            <div class="contact-socials-icons">
+                                <a href="https://www.instagram.com/auramind.cy" target="_blank" rel="noopener noreferrer" aria-label="AuraMind on Instagram" class="social-icon">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <rect x="3.5" y="3.5" width="17" height="17" rx="5" stroke="currentColor" stroke-width="1.3"/>
+                                        <circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.3"/>
+                                        <circle cx="17" cy="7" r="1" fill="currentColor"/>
+                                    </svg>
+                                </a>
+                                <a href="https://www.linkedin.com/in/auramind-ai-49ab6a429/" target="_blank" rel="noopener noreferrer" aria-label="AuraMind on LinkedIn" class="social-icon">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <rect x="3.5" y="3.5" width="17" height="17" rx="3" stroke="currentColor" stroke-width="1.3"/>
+                                        <path d="M8 10.5V16.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                        <circle cx="8" cy="7.6" r="1" fill="currentColor"/>
+                                        <path d="M11.5 16.5V13a2 2 0 0 1 4 0v3.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                        <path d="M11.5 13.2v-0.4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-            <form
-                class="lead-form"
-                id="leadForm"
-            >
-            <div class="lead-form-header">
-
-                    <span class="form-label">
-                        AURAMIND AI
-                    </span>
-
-                    <h3 data-i18n="contact.formTitle">
-                        Start your AI automation plan.
-                    </h3>
-
-                    <small data-i18n="contact.formSubtitle">
-                        A few details are all we need to understand
-                        what you want to automate.
-                    </small>
-
-                </div>
-
-                <div class="lead-form-grid">
-
-                    <label>
-
-                        <span data-i18n="contact.formName">
-                            Your name
-                        </span>
-
-                        <input
-                            type="text"
-                            name="name"
-                            required
-                            autocomplete="name"
-                            placeholder="Your name"
-                            data-i18n-placeholder="contact.formNamePlaceholder"
-                        >
-
-                    </label>
-
-                    <label>
-<span data-i18n="contact.formBusiness">
-                            Business name
-                        </span>
-
-                        <input
-                            type="text"
-                            name="business"
-                            required
-                            autocomplete="organization"
-                            placeholder="Your business"
-                            data-i18n-placeholder="contact.formBusinessPlaceholder"
-                        >
-
-                    </label>
-
-                    <label>
-
-                        <span data-i18n="contact.formType">
-                            Business type
-                        </span>
-
-                        <select
-                            name="type"
-                            required
-                        >
-
-                            <option
-                                value=""
-                                data-i18n="contact.formTypePlaceholder"
-                            >
-                                Select one
-                            </option>
-
-                            <option
-                                value="Restaurant"
-                                data-i18n="contact.typeRestaurant"
-                            >
-                                Restaurant
-                            </option>
-
-                            <option
-                                value="Real Estate"
-                                data-i18n="contact.typeRealEstate"
-                            >
-                                Real Estate
-                            </option>
-
-                            <option
-                                value="Clinic"
-                                data-i18n="contact.typeClinic"
-                            >
-                                Clinic
-                            </option>
-
-                            <option
-                                value="Retail / Local Business"
-                                data-i18n="contact.typeRetail"
-                            >
-                                Retail / Local Business
-                            </option>
-
-                            <option
-                                value="Other"
-                                data-i18n="contact.typeOther"
-                            >
-                                Other
-                            </option>
-
-                        </select>
-
-                    </label>
-
-                    <label>
-
-                        <span data-i18n="contact.formGoal">
-                            What would you like to automate?
-                        </span>
-
-                        <select
-                            name="goal"
-                            required
-                        >
-
-                            <option
-                                value=""
-                                data-i18n="contact.formGoalPlaceholder"
-                            >
-                                Select one
-                            </option>
-
-                            <option
-                                value="Customer support"
-                                data-i18n="contact.goalSupport"
-                            >
-                                Customer support
-                            </option>
-
-                            <option
-                                value="Lead capture"
-                                data-i18n="contact.goalLeads"
-                            >
-                                Lead capture
-                            </option>
-
-                            <option
-                                value="Orders"
-                                data-i18n="contact.goalOrders"
-                            >
-                                Orders
-                            </option>
-
-                            <option
-                                value="Appointments"
-                                data-i18n="contact.goalAppointments"
-                            >
-                                Appointments
-                            </option>
-
-                            <option
-                                value="Other"
-                                data-i18n="contact.goalOther"
-                            >
-                                Other
-                            </option>
-
-                        </select>
-
-                    </label>
-
-                    <label class="full">
-
-                        <span data-i18n="contact.formWhatsapp">
-                            WhatsApp number
-                        </span>
-
-                        <input
-                            type="tel"
-                            name="phone"
-                            required
-                            autocomplete="tel"
-                            placeholder="+90 ..."
-                            data-i18n-placeholder="contact.formWhatsappPlaceholder"
-                        >
-
-                    </label>
-
-                </div>
-
-                <button
-                    type="submit"
-                    class="btn btn-primary form-submit"
-                >
-
-                    <span data-i18n="contact.formSubmit">
-                        Request My Free AI Consultation
-                    </span>
-
-                    <span aria-hidden="true">
-                        →
-                    </span>
-
-                </button>
-
-                <p
-                    class="form-note"
-                    data-i18n="contact.formNote"
-                >
-                    Your request will open in WhatsApp so we can respond directly.
-                </p>
-
-            </form>
-
-            </div>
-            <div class="contact-info-grid">
-
-                <a
-                    href="mailto:Auramind.cy@gmail.com"
-                    class="contact-info-item"
-                    data-animate="fade-up"
-                >
-
-                    <div class="contact-info-icon">
-
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                        >
-
-                            <rect
-                                x="3.5"
-                                y="5.5"
-                                width="17"
-                                height="13"
-                                rx="2"
-                                stroke="currentColor"
-                                stroke-width="1.3"
-                            />
-
-                            <path
-                                d="M4.5 7l7.5 6 7.5-6"
-                                stroke="currentColor"
-                                stroke-width="1.3"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-
-                        </svg>
-
-                    </div>
-
-                    <div class="contact-info-text">
-                        <small data-i18n="contact.emailLabel">
-                            Email
-                        </small>
-
-                        <strong>
-                            Auramind.cy@gmail.com
-                        </strong>
-
-                    </div>
-
-                </a>
-
-                <a
-                    href="tel:+905488630491"
-                    class="contact-info-item"
-                    data-animate="fade-up"
-                >
-
-                    <div class="contact-info-icon">
-
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                        >
-
-                            <path
-                                d="M6 4.5h3l1.5 4-2 1.5a11 11 0 0 0 5.5 5.5l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A16 16 0 0 1 4 6.7 2 2 0 0 1 6 4.5Z"
-                                stroke="currentColor"
-                                stroke-width="1.3"
-                                stroke-linejoin="round"
-                            />
-
-                        </svg>
-
-                    </div>
-
-                    <div class="contact-info-text">
-
-                        <small data-i18n="contact.phoneLabel">
-                            Phone / WhatsApp
-                        </small>
-                        <strong>
-                            +90 548 863 0491
-                        </strong>
-
-                    </div>
-
-                </a>
-
-                <div
-                    class="contact-info-item"
-                    data-animate="fade-up"
-                >
-
-                    <div class="contact-info-icon">
-
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                        >
-
-                            <path
-                                d="M12 21s-6.5-5.6-6.5-10.8A6.5 6.5 0 0 1 12 3.7a6.5 6.5 0 0 1 6.5 6.5C18.5 15.4 12 21 12 21Z"
-                                stroke="currentColor"
-                                stroke-width="1.3"
-                                stroke-linejoin="round"
-                            />
-
-                            <circle
-                                cx="12"
-                                cy="10.4"
-                                r="2.2"
-                                stroke="currentColor"
-                                stroke-width="1.3"
-                            />
-
-                        </svg>
-
-                    </div>
-<div class="contact-info-text">
-
-                        <small data-i18n="contact.locationLabel">
-                            Location
-                        </small>
-
-<strong data-i18n="contact.locationValue">
-                            Lefkoşa, Northern Cyprus
-                        </strong>
-
-                    </div>
-
-                </div>
-
-                <div
-                    class="contact-info-item"
-                    data-animate="fade-up"
-                >
-
-                    <div class="contact-info-icon">
-
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                        >
-
-                            <circle
-                                cx="12"
-                                cy="12"
-                                r="7.5"
-                                stroke="currentColor"
-                                stroke-width="1.3"
-                            />
-
-                            <path
-                                d="M12 7.5V12l3 2"
-                                stroke="currentColor"
-                                stroke-width="1.3"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                            />
-
-                        </svg>
-
-                    </div>
-
-                    <div class="contact-info-text">
-
-                        <small data-i18n="contact.availabilityLabel">
-                            Availability
-                            </small>
-
-                        <strong data-i18n="contact.availabilityValue">
-                            Replies within a few hours, every day
-                        </strong>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div
-                class="contact-socials"
-                data-animate="fade-up"
-            >
-
-                <span
-                    class="contact-socials-label"
-                    data-i18n="contact.followLabel"
-                >
-                    Follow us
-                </span>
-
-                <div class="contact-socials-icons">
-
-                    <a
-                        href="https://www.instagram.com/auramind.cy"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="AuraMind on Instagram"
-                        class="social-icon"
-                    >
-
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                        >
-
-                            <rect
-                                x="3.5"
-                                y="3.5"
-                                width="17"
-                                height="17"
-                                rx="5"
-                                stroke="currentColor"
-                                stroke-width="1.3"
-                            />
-
-                            <circle
-                                cx="12"
-                                cy="12"
-                                r="4"
-                                stroke="currentColor"
-                                stroke-width="1.3"
-                            />
-
-                            <circle
-                                cx="17"
-                                cy="7"
-                                r="1"
-                                fill="currentColor"
-                            />
-
-                        </svg>
-
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/auramind-ai-49ab6a429/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="AuraMind on LinkedIn"
-                        class="social-icon"
-                    >
-
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                        >
-
-                            <rect
-                                x="3.5"
-                                y="3.5"
-                                width="17"
-                                height="17"
-                                rx="3"
-                                stroke="currentColor"
-                                stroke-width="1.3"
-                            />
-
-                            <path
-                                d="M8 10.5V16.5"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                            />
-
-                            <circle
-                                cx="8"
-                                cy="7.6"
-                                r="1"
-                                fill="currentColor"
-                            />
-
-                            <path
-                                d="M11.5 16.5V13a2 2 0 0 1 4 0v3.5"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                            />
-
-                            <path
-                                d="M11.5 13.2v-0.4"
-                                stroke="currentColor"
-                                stroke-width="1.4"
-                                stroke-linecap="round"
-                            />
-
-                        </svg>
-
-                    </a>
-
-                </div>
-
-            </div>
-            </div>
-
-    </div>
-
-</section>
-
-</main>
-
-<!-- =========================================================
+            </section>
+        </main>
+        <!-- =========================================================
      FOOTER
 ========================================================= -->
-
-<footer class="footer">
-
-    <div class="container footer-container">
-
-        <div class="footer-brand">
-
-            <a
-                href="#home"
-                class="logo"
-                aria-label="AuraMind home"
-            >
-
-                <svg
-                    class="logo-mark"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    aria-hidden="true"
-                >
-
-                    <ellipse
-                        cx="20"
-                        cy="20"
-                        rx="16"
-                        ry="6.4"
-                        stroke="url(#footerRingGrad)"
-                        stroke-width="1.3"
-                        opacity="0.95"
-                    />
-
-                    <ellipse
-                        cx="20"
-                        cy="20"
-                        rx="16"
-                        ry="6.4"
-                        stroke="url(#footerRingGrad)"
-                        stroke-width="1.3"
-                        opacity="0.65"
-                        transform="rotate(60 20 20)"
-                    />
-
-                    <ellipse
-                        cx="20"
-                        cy="20"
-                        rx="16"
-                        ry="6.4"
-                        stroke="url(#footerRingGrad)"
-                        stroke-width="1.3"
-                        opacity="0.4"
-                        transform="rotate(120 20 20)"
-                    />
-
-                    <circle
-                        cx="20"
-                        cy="20"
-                        r="4.6"
-                        fill="url(#footerCoreGrad)"
-                    />
-
-                    <circle
-                        cx="36"
-                        cy="20"
-                        r="1.3"
-                        fill="#F7F7F8"
-                    />
-
-                    <circle
-                        cx="28"
-                        cy="33.9"
-                        r="1.1"
-                        fill="#B5A4F2"
-                    />
-
-                    <circle
-                        cx="12"
-                        cy="33.9"
-                        r="1"
-                        fill="#8D78D8"
-                    />
-
-                    <defs>
-
-                        <linearGradient
-                            id="footerRingGrad"
-                            x1="4"
-                            y1="20"
-                            x2="36"
-                            y2="20"
-                            gradientUnits="userSpaceOnUse"
-                        >
-
-                            <stop
-                                offset="0%"
-                                stop-color="#8D78D8"
-                            />
-
-                            <stop
-                                offset="50%"
-                                stop-color="#F7F7F8"
-                            />
-
-                            <stop
-                                offset="100%"
-                                stop-color="#B5A4F2"
-                            />
-
-                        </linearGradient>
-
-                        <radialGradient
-                            id="footerCoreGrad"
-                            cx="35%"
-                            cy="32%"
-                            r="70%"
-                        >
-
-                            <stop
-                                offset="0%"
-                                stop-color="#FFFFFF"
-                            />
-
-                            <stop
-                                offset="100%"
-                                stop-color="#8D78D8"
-                            />
-
-                        </radialGradient>
-
-                    </defs>
-
-                </svg>
-
-                <span class="logo-text">
-                    AURA MIND<span class="accent"> AI</span>
-                    </span>
-
-            </a>
-
-            <p data-i18n="footer.tagline">
-                AI automation systems for modern businesses.
-            </p>
-
-        </div>
-
-        <div class="footer-links">
-
-            <div class="footer-link-group">
-
-                <strong data-i18n="footer.solutions">
-                    Solutions
-                </strong>
-
-                <a
-                    href="#services"
-                    data-i18n="nav.services"
-                >
-                    Services
-                </a>
-
-                <a
-                    href="#industries"
-                    data-i18n="nav.industries"
-                >
-                    Industries
-                </a>
-
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-brand">
+                    <a href="#home" class="logo" aria-label="AuraMind home" data-i18n="a11y.home" data-i18n-attr="aria-label">
+                        <svg class="logo-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true" focusable="false">
+                            <ellipse cx="20" cy="20" rx="16" ry="6.4" stroke="url(#footerRingGrad)" stroke-width="1.3" opacity="0.95"/>
+                            <ellipse cx="20" cy="20" rx="16" ry="6.4" stroke="url(#footerRingGrad)" stroke-width="1.3" opacity="0.65" transform="rotate(60 20 20)"/>
+                            <ellipse cx="20" cy="20" rx="16" ry="6.4" stroke="url(#footerRingGrad)" stroke-width="1.3" opacity="0.4" transform="rotate(120 20 20)"/>
+                            <circle cx="20" cy="20" r="4.6" fill="url(#footerCoreGrad)"/>
+                            <circle cx="36" cy="20" r="1.3" fill="#F7F7F8"/>
+                            <circle cx="28" cy="33.9" r="1.1" fill="#B5A4F2"/>
+                            <circle cx="12" cy="33.9" r="1" fill="#8D78D8"/>
+                            <defs>
+                                <linearGradient id="footerRingGrad" x1="4" y1="20" x2="36" y2="20" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0%" stop-color="#8D78D8"/>
+                                    <stop offset="50%" stop-color="#F7F7F8"/>
+                                    <stop offset="100%" stop-color="#B5A4F2"/>
+                                </linearGradient>
+                                <radialGradient id="footerCoreGrad" cx="35%" cy="32%" r="70%">
+                                    <stop offset="0%" stop-color="#FFFFFF"/>
+                                    <stop offset="100%" stop-color="#8D78D8"/>
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                        <span class="logo-text">AURAMIND<span class="accent"> AI</span></span>
+                    </a>
+                    <p data-i18n="footer.tagline">AI automation systems for modern businesses.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-link-group">
+                        <strong data-i18n="footer.solutions">Solutions</strong>
+                        <a href="#services" data-i18n="nav.services">Services</a>
+                        <a href="#industries" data-i18n="nav.industries">Industries</a>
+                        <a href="pricing.html" data-i18n="nav.pricing">Pricing</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <strong data-i18n="footer.company">Company</strong>
+                        <a href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
+                        <a href="#about" data-i18n="nav.about">About</a>
+                        <a href="#contact" data-i18n="nav.contact">Contact</a>
+                    </div>
+                    <div class="footer-link-group">
+                        <strong data-i18n="footer.connect">Connect</strong>
+                        <a href="mailto:Auramind.cy@gmail.com" data-i18n="contact.emailLabel">Email</a>
+                        <a href="https://www.instagram.com/auramind.cy" target="_blank" rel="noopener noreferrer">Instagram</a>
+                        <a href="https://www.linkedin.com/in/auramind-ai-49ab6a429/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p data-i18n="footer.copyright">© 2026 AuraMind AI. All rights reserved.</p>
+                    <span data-i18n="footer.location">Lefkoşa · Northern Cyprus</span>
+                </div>
             </div>
-
-            <div class="footer-link-group">
-
-                <strong data-i18n="footer.company">
-                    Company
-                </strong>
-
-                <a
-                    href="#how-it-works"
-                    data-i18n="nav.howItWorks"
-                >
-                    How It Works
-                </a>
-
-                <a
-                    href="#about"
-                    data-i18n="nav.about"
-                >
-                    About
-                </a>
-
-                <a
-                    href="#contact"
-                    data-i18n="nav.contact"
-                >
-                    Contact
-                </a>
-
-            </div>
-
-            <div class="footer-link-group">
-
-                <strong data-i18n="footer.connect">
-                    Connect
-                </strong>
-
-                <a href="mailto:Auramind.cy@gmail.com">
-                    Email
-                </a>
-
-                <a href="https://www.instagram.com/auramind.cy" target="_blank" rel="noopener noreferrer">
-                    Instagram
-                </a>
-
-                <a href="https://www.linkedin.com/in/auramind-ai-49ab6a429/" target="_blank" rel="noopener noreferrer">
-                    LinkedIn
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="footer-bottom">
-
-            <p data-i18n="footer.copyright">
-                © 2026 AuraMind AI. All rights reserved.
-            </p>
-
-            <span data-i18n="footer.location">
-                Lefkoşa · Northern Cyprus
-            </span>
-
-        </div>
-
-    </div>
-
-</footer>
-
-<script
-    type="module"
-    src="script.js"
-></script>
-
-</body>
+        </footer>
+        <script src="script.js" charset="utf-8" defer></script>
+    </body>
 </html>
