@@ -332,3 +332,15 @@ html[dir="rtl"] .plan-badge {
         padding: 70px 0;
     }
 }
+
+/* ---- Readability ---- */
+.pricing-hero p { font-size: 1.12rem; color: var(--muted); }
+.setup-fee-text strong { font-size: 1.05rem; }
+.setup-fee-text small { font-size: 0.92rem; color: var(--muted); }
+.plan-tagline { font-size: 0.95rem; color: var(--muted); }
+.plan-price .price-per { font-size: 0.98rem; }
+.plan-features li { font-size: 0.97rem; }
+.plan-first span { font-size: 0.86rem; color: var(--muted); }
+.plan-badge { font-size: 0.8rem; }
+.notes-box li { font-size: 0.97rem; }
+.pricing-cta p { color: var(--muted); font-size: 1.05rem; }
