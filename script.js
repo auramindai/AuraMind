@@ -23,7 +23,8 @@
     const DEFAULT_LANG = "en";
     const SUPPORTED_LANGS = ["en", "tr", "ar"];
     const RTL_LANGS = ["ar"];
-    const WHATSAPP_NUMBER = "905488630491";
+    const WHATSAPP_NUMBER = "15734095760";      // Main WhatsApp number (demo, pricing and contact)
+    const LEAD_WHATSAPP_NUMBER = "15734095760"; // Same main number (kept separate so it can be split again)
     const DESKTOP_NAV_QUERY = "(min-width: 1121px)"; // must match the CSS breakpoint
     const OG_LOCALES = { en: "en_US", tr: "tr_TR", ar: "ar_AR" };
 
@@ -50,20 +51,21 @@
                 "services": "Services",
                 "industries": "Industries",
                 "howItWorks": "How It Works",
-                "about": "About",
+                "about": "Why AuraMind",
                 "contact": "Contact",
-                "bookDemo": "Book a Demo",
+                "bookDemo": "Try a Demo",
+                "demoMessage": "Hi! I'd like to try the AuraMind AI demo.",
                 "openMenu": "Open menu",
                 "closeMenu": "Close menu",
                 "pricing": "Pricing"
             },
             "hero": {
                 "eyebrow": "AI assistants made for your business",
-                "h1_line1": "AI that answers customers",
-                "h1_line2": "so your team can focus on growth.",
-                "description": "We build AI assistants that talk with your customers, take their orders, collect their details and remember each conversation, day and night, so your team can focus on what people do best.",
-                "btnPrimary": "Book a Free Demo",
-                "btnSecondary": "See How It Works",
+                "h1_line1": "Never miss a customer message.",
+                "h1_line2": "Turn more enquiries into customers.",
+                "description": "AuraMind builds AI assistants for WhatsApp, Instagram and your website. They answer customers in seconds, collect their details and hand the conversation to your team when it matters, so you win more leads and save hours every week.",
+                "btnPrimary": "Try a Demo",
+                "btnSecondary": "Talk to an Expert",
                 "trustAvailability": "AI availability",
                 "trustResponse": "Customer responses",
                 "trustCustom": "Built for your business",
@@ -231,6 +233,8 @@
                 "waHeading": "New consultation request (website)"
             },
             "footer": {
+                "privacy": "Privacy Policy",
+                "terms": "Terms of Use",
                 "tagline": "AI automation systems for modern businesses.",
                 "solutions": "Solutions",
                 "company": "Company",
@@ -319,6 +323,12 @@
                 "clinics": "A modern, softly lit clinic reception desk with curved detailing and ambient lighting",
                 "retail": "A smiling small business owner in an apron standing behind a counter with a laptop, in a shop lined with plants"
             },
+            "legal": {
+                "privacyTitle": "Privacy Policy | AuraMind AI",
+                "privacyDesc": "How AuraMind AI collects, uses and protects the information you share with us.",
+                "termsTitle": "Terms of Use | AuraMind AI",
+                "termsDesc": "The terms that apply when you use the AuraMind AI website."
+            },
             "notFound": {
                 "metaTitle": "Page not found | AuraMind AI",
                 "title": "Page not found",
@@ -336,20 +346,21 @@
                 "services": "Hizmetler",
                 "industries": "Sektörler",
                 "howItWorks": "Nasıl Çalışır",
-                "about": "Hakkımızda",
+                "about": "Neden AuraMind",
                 "contact": "İletişim",
-                "bookDemo": "Demo Talep Et",
+                "bookDemo": "Demoyu Deneyin",
+                "demoMessage": "Merhaba! AuraMind yapay zeka demosunu denemek istiyorum.",
                 "openMenu": "Menüyü aç",
                 "closeMenu": "Menüyü kapat",
                 "pricing": "Fiyatlandırma"
             },
             "hero": {
                 "eyebrow": "İşletmenize özel yapay zeka asistanları",
-                "h1_line1": "Müşterilerinizi yanıtlayan yapay zeka,",
-                "h1_line2": "ekibiniz büyümeye odaklansın.",
-                "description": "Müşterilerinizle sohbet eden, siparişlerini alan, bilgilerini kaydeden ve her görüşmeyi hatırlayan yapay zeka asistanları kuruyoruz. Gece gündüz çalışırlar; böylece ekibiniz insanın en iyi yaptığı işlere odaklanabilir.",
-                "btnPrimary": "Ücretsiz Demo Talep Edin",
-                "btnSecondary": "Nasıl Çalıştığını Görün",
+                "h1_line1": "Hiçbir müşteri mesajını kaçırmayın.",
+                "h1_line2": "Daha çok soruyu müşteriye dönüştürün.",
+                "description": "WhatsApp, Instagram ve web siteniz için yapay zeka asistanları kuruyoruz. Müşterilerinize saniyeler içinde yanıt verir, bilgilerini kaydeder ve gerektiğinde sohbeti ekibinize devreder; böylece daha fazla müşteri kazanır, her hafta saatlerce zaman kazanırsınız.",
+                "btnPrimary": "Demoyu Deneyin",
+                "btnSecondary": "Bir Uzmanla Görüşün",
                 "trustAvailability": "Kesintisiz yapay zeka",
                 "trustResponse": "Müşteri yanıtları",
                 "trustCustom": "İşletmenize özel kurulur",
@@ -517,6 +528,8 @@
                 "waHeading": "Yeni danışmanlık talebi (web sitesi)"
             },
             "footer": {
+                "privacy": "Gizlilik Politikası",
+                "terms": "Kullanım Koşulları",
                 "tagline": "Modern işletmeler için yapay zeka otomasyon sistemleri.",
                 "solutions": "Çözümler",
                 "company": "Şirket",
@@ -622,20 +635,21 @@
                 "services": "الخدمات",
                 "industries": "القطاعات",
                 "howItWorks": "كيف يعمل",
-                "about": "من نحن",
+                "about": "لماذا AuraMind",
                 "contact": "تواصل معنا",
-                "bookDemo": "احجز عرضًا تجريبيًا",
+                "bookDemo": "جرّب العرض التجريبي",
+                "demoMessage": "مرحبًا! أود تجربة العرض التجريبي لمساعد AuraMind الذكي.",
                 "openMenu": "فتح القائمة",
                 "closeMenu": "إغلاق القائمة",
                 "pricing": "الأسعار"
             },
             "hero": {
                 "eyebrow": "مساعدات ذكاء اصطناعي مصممة لعملك",
-                "h1_line1": "ذكاء اصطناعي يرد على عملائك،",
-                "h1_line2": "ليتفرغ فريقك للنمو.",
-                "description": "نبني مساعدين بالذكاء الاصطناعي يتحدثون مع عملائك، ويستقبلون طلباتهم، ويسجلون بياناتهم، ويتذكرون كل محادثة، ليلًا ونهارًا، حتى يتفرغ فريقك لما يجيده البشر.",
-                "btnPrimary": "احجز عرضًا تجريبيًا مجانيًا",
-                "btnSecondary": "شاهد كيف يعمل",
+                "h1_line1": "لا تفوّت أي رسالة من عملائك.",
+                "h1_line2": "حوّل المزيد من الاستفسارات إلى عملاء.",
+                "description": "نبني مساعدين بالذكاء الاصطناعي لواتساب وإنستغرام وموقعك الإلكتروني. يردّون على عملائك خلال ثوانٍ، ويسجّلون بياناتهم، ويحوّلون المحادثة إلى فريقك عند الحاجة، لتكسب عملاء أكثر وتوفّر ساعات كل أسبوع.",
+                "btnPrimary": "جرّب العرض التجريبي",
+                "btnSecondary": "تحدث مع خبير",
                 "trustAvailability": "خدمة متواصلة",
                 "trustResponse": "الرد على العملاء",
                 "trustCustom": "مصمم خصيصًا لعملك",
@@ -803,6 +817,8 @@
                 "waHeading": "طلب استشارة جديد (من الموقع)"
             },
             "footer": {
+                "privacy": "سياسة الخصوصية",
+                "terms": "شروط الاستخدام",
                 "tagline": "أنظمة أتمتة بالذكاء الاصطناعي للشركات الحديثة.",
                 "solutions": "الحلول",
                 "company": "الشركة",
@@ -983,7 +999,9 @@
             const keys = {
                 home: ["meta.title", "meta.description", "meta.ogDescription"],
                 pricing: ["pricing.metaTitle", "pricing.metaDescription", "pricing.metaDescription"],
-                notfound: ["notFound.metaTitle", null, null]
+                notfound: ["notFound.metaTitle", null, null],
+                privacy: ["legal.privacyTitle", "legal.privacyDesc", "legal.privacyDesc"],
+                terms: ["legal.termsTitle", "legal.termsDesc", "legal.termsDesc"]
             }[page] || ["meta.title", "meta.description", "meta.ogDescription"];
 
             const title = translate(keys[0], lang);
@@ -1024,6 +1042,7 @@
             updateMeta(lang);
             updateLanguageButtons(lang);
             updatePlanLinks(lang);
+            updateDemoLinks(lang);
         }
 
         function updateLanguageButtons(lang) {
@@ -1039,6 +1058,14 @@
         function updatePlanLinks(lang) {
             document.querySelectorAll("[data-plan-cta]").forEach((link) => {
                 const message = `${translate("pricing.waMessage", lang)} ${link.getAttribute("data-plan-cta")}`;
+                link.href = `https://wa.me/${LEAD_WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+            });
+        }
+
+        /* "Try a Demo" buttons open a chat with the AuraMind AI assistant. */
+        function updateDemoLinks(lang) {
+            const message = translate("nav.demoMessage", lang);
+            document.querySelectorAll("[data-demo-cta]").forEach((link) => {
                 link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
             });
         }
@@ -1344,7 +1371,7 @@
 
                 busy = true;
                 const lang = I18N.getCurrentLanguage();
-                const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(buildMessage(form, lang))}`;
+                const url = `https://wa.me/${LEAD_WHATSAPP_NUMBER}?text=${encodeURIComponent(buildMessage(form, lang))}`;
 
                 if (status) status.textContent = I18N.translate("contact.formStatus", lang);
 
