@@ -2912,3 +2912,109 @@ html[dir="rtl"] .why-quote p { font-style: normal; line-height: 1.8; }
         border-top: 1px solid var(--border-strong);
     }
 }
+
+
+/* =========================================================
+   POLISH PASS
+   Tablet and mobile refinements. Kept at the end so it
+   layers over the base rules without changing them.
+========================================================= */
+
+@media (max-width: 950px) {
+    /* The two floating cards collided with the chat window on small screens. */
+    .system-float { display: none; }
+
+    /* Long hero copy reads better left-aligned than centred. */
+    .hero-container { text-align: start; }
+    .hero-content { align-items: flex-start; }
+
+    .solution-content { text-align: start; }
+}
+
+@media (max-width: 600px) {
+    .hero { padding-top: 130px; }
+}
+
+
+/* =========================================================
+   LEGAL PAGES AND FOOTER LINKS
+========================================================= */
+
+.legal {
+    max-width: 760px;
+    padding-top: 150px;
+    padding-bottom: 96px;
+}
+
+.legal h1 {
+    font-family: var(--font-display);
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    font-weight: 500;
+    line-height: 1.15;
+    color: var(--white);
+}
+
+.legal-updated {
+    margin: 12px 0 32px;
+    font-size: 0.9rem;
+    color: var(--faint);
+}
+
+.legal h2 {
+    margin: 40px 0 12px;
+    font-family: var(--font-display);
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.legal p,
+.legal li {
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.legal p + p { margin-top: 14px; }
+
+.legal ul {
+    margin-top: 12px;
+    padding-inline-start: 1.25rem;
+}
+
+.legal li + li { margin-top: 8px; }
+
+.legal strong { color: var(--text); font-weight: 600; }
+
+.legal a {
+    color: var(--primary-light);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.footer-legal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 22px;
+}
+
+.footer-legal a {
+    font-size: 0.88rem;
+    color: var(--muted);
+}
+
+.footer-legal a:hover { color: var(--white); }
+
+/* =========================================================
+   CONTENT IS ALWAYS VISIBLE
+   Scroll fade-ins removed: content must never depend on a
+   script running to become visible.
+========================================================= */
+
+.js [data-animate],
+.js [data-animate="zoom-in"] {
+    opacity: 1;
+    transform: none;
+    transition: none;
+}
+
+[data-animate][data-animate-delay] { transition-delay: 0s; }
