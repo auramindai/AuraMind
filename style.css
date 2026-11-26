@@ -3018,3 +3018,397 @@ html[dir="rtl"] .why-quote p { font-style: normal; line-height: 1.8; }
 }
 
 [data-animate][data-animate-delay] { transition-delay: 0s; }
+
+/* =========================================================
+   VIOLET HERO (.zl) — starfield + glowing planet rim + dashboard.
+   Scoped; uses the brand violet (#8D78D8 / #B5A4F2) with a brighter
+   violet for glows and buttons. Fonts come from the site tokens.
+   Animations are pure CSS (no script needed to show content).
+========================================================= */
+.zl {
+    --zs: .75; --zh: 706px;
+    --zv1: #9b6bff; --zv2: #6d3df0;
+    --zmuted: #b9b5cb;
+    position: relative; height: var(--zh); overflow: hidden; background: #000;
+    color: var(--white); text-align: center;
+}
+.zl-sky { position: absolute; inset: 0; background: radial-gradient(ellipse 80% 50% at 50% 0, #12082a 0, #000 70%); }
+.zl-sky canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.zl-stage { position: absolute; left: 50%; top: 0; width: 1672px; height: 941px; transform-origin: 50% 0; transform: translateX(-50%) scale(var(--zs)); direction: ltr; }
+html[dir="rtl"] .zl-hero { direction: rtl; }
+.zl-glow { position: absolute; left: 50%; top: 0; width: calc(1672px * var(--zs)); height: calc(717px * var(--zs)); transform: translateX(-50%); object-fit: cover; mix-blend-mode: screen; opacity: 0; transition: opacity .8s; pointer-events: none; }
+.zl-glow.is-on { opacity: 1; }
+.zl-hero { position: absolute; top: 170px; left: 0; right: 0; z-index: 4; }
+.zl-eyebrow { display: inline-block; font-size: 13px; font-weight: 600; letter-spacing: .2em; text-transform: uppercase; color: var(--primary-light); border: 1px solid rgba(141,120,216,.38); background: rgba(141,120,216,.12); padding: 7px 18px; border-radius: 99px; margin-bottom: 22px; }
+.zl-title { font-family: var(--font-display); font-weight: 600; font-size: 84px; line-height: 1.04; letter-spacing: -.02em; color: var(--white); }
+.zl-l { display: block; overflow: hidden; padding-bottom: 8px; }
+.zl-l > span { display: block; animation: zlWipe 1s cubic-bezier(.16,1,.3,1) both; animation-delay: var(--d, 0s); }
+.zl-grad { background: linear-gradient(90deg, #c9b8ff, #9b6bff 55%, #7a4cf6); -webkit-background-clip: text; background-clip: text; color: transparent; font-style: italic; }
+html[dir="rtl"] .zl-grad { font-style: normal; }
+html[dir="rtl"] .zl-title { letter-spacing: 0; }
+.zl-lede { margin: 24px auto 0; max-width: 900px; font-size: 19px; line-height: 1.6; color: var(--zmuted); }
+.zl-btns { display: flex; gap: 14px; justify-content: center; margin-top: 32px; }
+.zl-pill { display: inline-flex; align-items: center; justify-content: center; border-radius: 99px; font-weight: 600; font-size: 16px; padding: 14px 30px; transition: .3s cubic-bezier(.16,1,.3,1); cursor: pointer; }
+.zl-v { background: linear-gradient(180deg, var(--zv1), var(--zv2)); color: #fff; box-shadow: 0 0 0 1px rgba(181,164,242,.35) inset, 0 8px 30px rgba(109,61,240,.45); }
+.zl-v:hover { filter: brightness(1.15); box-shadow: 0 0 0 1px rgba(181,164,242,.6) inset, 0 10px 50px rgba(155,107,255,.75); transform: translateY(-2px); }
+.zl-d { background: rgba(20,16,32,.8); border: 1px solid rgba(141,120,216,.3); color: #e9e5f7; }
+.zl-d:hover { border-color: var(--primary-light); box-shadow: 0 0 30px rgba(141,120,216,.4); color: #fff; }
+/* dashboard */
+.zl-dglow { position: absolute; left: 50%; top: calc(610px * var(--zs)); width: calc(1312px * var(--zs)); height: calc(90px * var(--zs)); transform: translateX(-50%); background: url(https://d2ol7oe51mr4n9.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/e0e14572-12e1-4c08-b471-a21521844945.png) center / 100% 100% no-repeat; mix-blend-mode: screen; pointer-events: none; }
+.zl-dash { position: absolute; left: 234px; top: 651px; width: 1204px; height: 600px; border-radius: 14px; text-align: start; background: linear-gradient(180deg, rgba(20,15,36,.94), rgba(9,8,14,.98)); border: 1px solid rgba(141,120,216,.45); box-shadow: 0 -20px 120px rgba(109,61,240,.3); display: grid; grid-template-columns: 230px 1fr 290px; z-index: 3; overflow: hidden; animation: zlIn 1.2s cubic-bezier(.16,1,.3,1) .75s both; }
+html[dir="rtl"] .zl-dash { direction: rtl; }
+.zl-dash::before { content: ""; position: absolute; top: 0; left: 8%; right: 8%; height: 2px; background: linear-gradient(90deg, transparent, #c9b8ff, transparent); box-shadow: 0 0 22px 3px rgba(155,107,255,.9); z-index: 3; }
+.zl-side { padding: 22px 16px; border-inline-end: 1px solid rgba(247,247,248,.07); display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: #a7a3b8; }
+.zl-brand { display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 16px; color: #fff; padding: 0 8px 16px; }
+.zl-brand span { color: var(--primary-light); }
+.zl-item { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 10px; }
+.zl-item.zl-on { background: rgba(141,120,216,.2); border: 1px solid rgba(141,120,216,.4); color: #fff; }
+.zl-item b { width: 14px; height: 14px; border-radius: 4px; border: 1.5px solid currentColor; opacity: .8; flex: none; }
+.zl-sep { font-size: 11px; letter-spacing: .14em; text-transform: uppercase; color: #6d6a7c; padding: 16px 12px 6px; }
+.zl-promo { margin-top: auto; border-radius: 12px; padding: 16px; background: radial-gradient(circle at 80% 0, rgba(155,107,255,.55), rgba(109,61,240,.15) 70%); border: 1px solid rgba(141,120,216,.4); color: #e9e5f7; font-size: 13px; line-height: 1.5; }
+.zl-promo strong { display: block; color: #fff; font-size: 15px; margin-bottom: 4px; }
+.zl-promo em { display: inline-block; margin-top: 10px; padding: 7px 16px; border-radius: 99px; background: linear-gradient(180deg, var(--zv1), var(--zv2)); color: #fff; font-weight: 600; font-size: 12px; font-style: normal; }
+.zl-main { padding: 20px 24px; display: flex; flex-direction: column; gap: 16px; min-width: 0; }
+.zl-top { display: flex; justify-content: flex-end; align-items: center; gap: 12px; font-size: 13px; color: #a7a3b8; }
+.zl-ic { width: 28px; height: 28px; border-radius: 8px; background: rgba(247,247,248,.06); border: 1px solid rgba(247,247,248,.08); }
+.zl-av { width: 28px; height: 28px; border-radius: 50%; background: linear-gradient(135deg, var(--primary-light), var(--zv2)); }
+.zl-top strong { color: #fff; font-weight: 600; }.zl-top small { color: #6d6a7c; }
+.zl-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.zl-card { border-radius: 12px; background: rgba(247,247,248,.035); border: 1px solid rgba(247,247,248,.08); padding: 16px 18px; }
+.zl-card label { display: block; font-size: 12px; color: #8e8aa0; }
+.zl-n { font-family: var(--font-display); font-size: 34px; font-weight: 600; margin-top: 4px; }
+.zl-up, .zl-dn { font-family: var(--font-body); font-size: 13px; font-weight: 600; margin-inline-start: 8px; font-style: normal; }
+.zl-up { color: #45b558; }.zl-dn { color: #f03b2a; }
+.zl-chart { flex: 1; display: flex; flex-direction: column; min-height: 0; }
+.zl-chart h3, .zl-cal h3 { font-size: 14px; font-weight: 600; margin-bottom: 8px; color: #fff; }
+.zl-chart svg { flex: 1; width: 100%; min-height: 0; }
+.zl-cal { padding: 20px 18px; border-inline-start: 1px solid rgba(247,247,248,.07); display: flex; flex-direction: column; gap: 10px; font-size: 13px; }
+.zl-sub { color: #8e8aa0; font-size: 12px; }
+.zl-cal > .zl-sub { margin-bottom: 6px; }
+.zl-row { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding: 11px 12px; border-radius: 10px; background: rgba(141,120,216,.07); border: 1px solid rgba(141,120,216,.16); color: #c9c5da; }
+.zl-row b { color: #fff; font-weight: 600; }
+.zl-row.zl-apps { flex-direction: column; align-items: flex-start; gap: 4px; }
+/* entrance (CSS only: content shows even without JS) */
+.zl-a { animation: zlIn .9s cubic-bezier(.16,1,.3,1) both; animation-delay: var(--d, 0s); }
+@keyframes zlIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes zlWipe { from { transform: translateY(105%); } to { transform: none; } }
+@media (prefers-reduced-motion: reduce) {
+    .zl-a, .zl-l > span, .zl-dash { animation: none !important; }
+    .zl-glow { display: none; }
+}
+/* phones / portrait: stacked layout */
+@media (max-width: 899px), (orientation: portrait) {
+    .zl { height: auto; padding: 120px 0 40px; }
+    .zl-stage { position: relative; left: 0; width: 100%; height: auto; transform: none; }
+    .zl-glow, .zl-dglow { display: none; }
+    .zl-hero { position: relative; top: 0; padding: 0 22px; }
+    .zl-title { font-size: clamp(2.2rem, 10vw, 3.2rem); }
+    .zl-lede { font-size: 1rem; }
+    .zl-btns { flex-direction: column; align-items: stretch; }
+    .zl-dash { position: relative; left: 0; top: 0; width: calc(100% - 32px); height: auto; margin: 44px 16px 0; display: flex; flex-direction: column; }
+    .zl-side { flex-direction: row; overflow-x: auto; border: 0; padding: 16px 12px 4px; }
+    .zl-side .zl-sep, .zl-promo, .zl-brand { display: none; }
+    .zl-item { white-space: nowrap; }
+    .zl-chart svg { height: 180px; flex: none; }
+    .zl-cal { border: 0; border-top: 1px solid rgba(247,247,248,.07); }
+    .zl-stats { grid-template-columns: 1fr; }
+    .zl-top { justify-content: space-between; }
+}
+
+/* =========================================================
+   HALFTONE DOT FIELD + GLASS FAQ / FOOTER (every page except the hero)
+   One fixed canvas (#dotField, created by script.js) sits behind all
+   content. Section backgrounds are made transparent so it shows
+   through; the home hero (#home) is opaque and covers it.
+   Colours: brand violet #6d3df0 -> #9b6bff -> pale lavender #dccfff.
+========================================================= */
+#dotField {
+    position: fixed; inset: 0; width: 100%; height: 100%;
+    z-index: 0; pointer-events: none; display: block;
+}
+body > main, body > footer { position: relative; z-index: 1; }
+body > main > section:not(#home),
+body > main > article { background: transparent !important; }
+
+/* FAQ: dark violet glass card */
+.faq-section .x-faq {
+    max-width: 688px; margin: 0 auto; padding: 4px 24px;
+    border-top: 0; border-radius: 8px;
+    background: rgba(20, 12, 38, 0.78);
+    border: 1px solid rgba(181, 164, 242, 0.16);
+    -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+}
+.faq-section .x-faq details { border-bottom: 1px solid rgba(181, 164, 242, 0.14); }
+.faq-section .x-faq details:last-child { border-bottom: 0; }
+.faq-section .x-faq summary { padding: 18px 0; font-weight: 500; letter-spacing: -0.005em; }
+.faq-section .x-faq summary::after,
+.faq-section .x-faq details[open] summary::after {
+    content: ""; width: 9px; height: 9px; margin-inline-end: 4px;
+    border-right: 1.8px solid var(--primary-light); border-bottom: 1.8px solid var(--primary-light);
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform .35s cubic-bezier(.2, .8, .2, 1);
+}
+.faq-section .x-faq details[open] summary::after { transform: translateY(2px) rotate(-135deg); }
+.faq-section .x-faq details[open] p { animation: dfFade .4s cubic-bezier(.2, .8, .2, 1) both; }
+@keyframes dfFade { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+
+/* Footer: full-width violet glass panel */
+body .footer {
+    margin: 0 16px 16px; padding: 46px 0 44px;
+    background: linear-gradient(180deg, rgba(22, 12, 40, 0.88), rgba(66, 34, 126, 0.86));
+    border: 1px solid rgba(181, 164, 242, 0.18); border-radius: 8px;
+    -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+}
+body .footer .footer-bottom { border-top-color: rgba(181, 164, 242, 0.18); }
+body .footer .footer-brand p,
+body .footer .footer-links a,
+body .footer .footer-bottom p,
+body .footer .footer-bottom span { color: #d9d2ee; }
+body .footer .footer-links a:hover,
+body .footer .footer-legal a:hover { color: #fff; }
+@media (prefers-reduced-motion: reduce) {
+    .faq-section .x-faq details[open] p { animation: none; }
+}
+
+/* =========================================================
+   GLOW FEATURE CARDS (every section below the hero)
+   Blurred brand-gradient glow behind a dark card with an 8px
+   gradient border, built with the padding-box / border-box
+   background-clip technique. Works on the existing markup.
+========================================================= */
+
+:root {
+    --gc-surface: #1A1A20;
+    /* AuraMind brand gradients: violet #8D78D8 / gold #D9A15C */
+    --gc-violet-gold: linear-gradient(137deg, #8D78D8 0%, #D9CCFF 45%, #D9A15C 100%);
+    --gc-pearl-violet: linear-gradient(137deg, #FFFFFF 0%, #B5A4F2 45%, #6A53C2 100%);
+    --gc-gold-violet: linear-gradient(137deg, #D9A15C 0%, #F6DDB8 45%, #8D78D8 100%);
+}
+
+/* ---- Grid containers: no outer frames, room for the glow ---- */
+body :is(.problem-grid, .services-grid, .industries-grid, .steps-grid, .x-grid, .plans-grid, .capability-list, .why-list) {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding: 0;
+    border: 0 !important;
+    border-radius: 0;
+    background: none !important;
+    overflow: visible;
+}
+body .plans-grid { grid-template-columns: 1fr !important; gap: 2.5rem !important; }
+
+@media (min-width: 640px) {
+    body :is(.problem-grid, .steps-grid, .services-grid, .capability-list) { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+}
+@media (min-width: 768px) {
+    body .industries-grid { grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+}
+@media (min-width: 900px) {
+    body .x-grid { grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+    body .plans-grid { grid-template-columns: repeat(3, 1fr) !important; gap: 0.75rem !important; }
+}
+@media (min-width: 1000px) {
+    body .services-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1100px) {
+    body :is(.problem-grid, .steps-grid) { grid-template-columns: repeat(4, 1fr); }
+}
+body .why-list { gap: 2rem; }
+
+/* ---- The card ---- */
+body :is(.problem-card, .service-card, .service-card.featured, .industry-card, .industry-card.featured,
+         .step-card, .capability-item, .why-row, .x-card, .x-card.f, .plan-card, .plan-card.featured) {
+    --gc: var(--gc-violet-gold);
+    --gc-border: 8px;
+    --gc-radius: 40px;
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 260px;
+    padding: calc(var(--gc-border) + 20px);
+    border: 0 !important;
+    border-radius: var(--gc-radius);
+    background: none !important;
+    box-shadow: none !important;
+    overflow: visible;
+    text-align: start;
+    color: inherit;
+}
+@media (min-width: 768px) {
+    body :is(.problem-card, .service-card, .service-card.featured, .step-card, .x-card, .x-card.f, .plan-card, .plan-card.featured) {
+        min-height: 300px;
+    }
+}
+
+/* Gradient rotation */
+body :is(.problem-card, .service-card, .step-card, .x-card, .plan-card, .industry-card, .capability-item, .why-row):nth-child(3n+2) { --gc: var(--gc-pearl-violet); }
+body :is(.problem-card, .service-card, .step-card, .x-card, .plan-card, .industry-card, .capability-item, .why-row):nth-child(3n)   { --gc: var(--gc-gold-violet); }
+body :is(.service-card.featured, .x-card.f, .plan-card.featured, .industry-card.featured) { --gc: var(--gc-violet-gold); }
+
+/* Glow behind the card */
+body :is(.problem-card, .service-card, .service-card.featured, .industry-card, .industry-card.featured,
+         .step-card, .capability-item, .why-row, .x-card, .x-card.f, .plan-card, .plan-card.featured)::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -2;
+    width: auto;
+    height: auto;
+    border: 0;
+    border-radius: var(--gc-radius);
+    background: var(--gc);
+    opacity: 0.6;
+    filter: blur(45px);
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+body :is(.problem-card, .service-card, .industry-card, .step-card, .capability-item, .why-row, .x-card, .plan-card):hover::before { opacity: 0.8; }
+
+/* Foreground: dark fill with an 8px gradient border */
+body :is(.problem-card, .service-card, .service-card.featured, .industry-card, .industry-card.featured,
+         .step-card, .step-card:not(:last-child), .capability-item, .why-row, .x-card, .x-card.f, .plan-card, .plan-card.featured)::after,
+html[dir="rtl"] body .step-card:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    inset: 0 !important;
+    z-index: -1;
+    width: auto !important;
+    height: auto !important;
+    transform: none !important;
+    border: var(--gc-border) solid transparent;
+    border-radius: var(--gc-radius);
+    background:
+        linear-gradient(var(--gc-surface), var(--gc-surface)) padding-box,
+        var(--gc) border-box !important;
+    pointer-events: none;
+}
+
+/* ---- Icons: 32px, stroke 2.5, white/90 ---- */
+body :is(.problem-number, .service-icon, .step-marker, .capability-icon, .why-icon) {
+    display: block !important;
+    flex: none;
+    width: 32px !important;
+    height: 32px !important;
+    margin: 0 0 auto !important;
+    padding: 0;
+    border: 0 !important;
+    border-radius: 0 !important;
+    background: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+body :is(.problem-number, .service-icon, .step-marker, .capability-icon, .why-icon) svg {
+    width: 32px;
+    height: 32px;
+}
+body :is(.problem-number, .service-icon, .step-marker, .capability-icon, .why-icon) svg :is(path, circle, rect, line, polyline) {
+    stroke-width: 2.5px;
+    vector-effect: non-scaling-stroke;
+}
+
+/* ---- Text: title and description ---- */
+body :is(.problem-card, .service-card, .industry-card, .step-card, .capability-item, .why-row, .x-card, .plan-card) h3 {
+    margin: 0 0 0.75rem;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.25rem;
+    line-height: 1.3;
+    letter-spacing: -0.025em;
+}
+body :is(.problem-card, .service-card, .industry-card, .step-card, .capability-item, .why-row, .x-card, .plan-card) p {
+    max-width: none;
+    margin: 0;
+    color: #9CA3AF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+body :is(.problem-card, .service-card, .industry-card, .step-card, .capability-item, .why-row, .x-card, .plan-card) ::selection,
+body :is(.problem-card, .service-card, .industry-card, .step-card, .capability-item, .why-row, .x-card, .plan-card)::selection {
+    background: rgba(255, 255, 255, 0.2);
+}
+body .step-content { margin-top: auto; }
+body .capability-item > div:last-child { margin-top: auto; }
+
+/* ---- Per-component adjustments ---- */
+/* Capability items: compact squares */
+body .capability-item.capability-item { --gc-border: 6px; --gc-radius: 32px; min-height: 200px; padding: calc(var(--gc-border) + 18px); }
+
+/* Why rows: wide cards, icon beside text */
+body .why-row.why-row {
+    --gc-border: 6px;
+    --gc-radius: 32px;
+    display: grid;
+    grid-template-columns: 32px minmax(0, 1fr);
+    align-items: start;
+    gap: 20px;
+    min-height: 0;
+    padding: calc(var(--gc-border) + 24px);
+}
+body .why-row .why-icon { margin: 0 !important; }
+@media (max-width: 600px) {
+    body .why-row.why-row { grid-template-columns: 1fr; gap: 16px; padding: calc(var(--gc-border) + 22px); }
+}
+
+/* Industries: photo sits inside the gradient frame */
+body .industry-card.industry-card { min-height: 0; padding: var(--gc-border); }
+body .industry-card .industry-media {
+    width: 100%;
+    border-radius: calc(var(--gc-radius) - var(--gc-border)) calc(var(--gc-radius) - var(--gc-border)) 0 0;
+}
+body .industry-card .industry-body { width: 100%; padding: 32px 24px 24px; }
+body .industry-card .industry-icon { color: rgba(255, 255, 255, 0.9); }
+
+/* Pricing cards: natural top-aligned flow */
+body :is(.x-card.x-card, .plan-card.plan-card) { justify-content: flex-start; gap: 10px; }
+body .x-card .x-name { margin: 0; }
+body .x-card .x-pop { z-index: 2; top: -14px; inset-inline-start: 36px; }
+body .plan-card .plan-badge { z-index: 2; }
+
+/* ---- Entrance animation: fade + 30px rise, 0.8s ease-out, staggered ---- */
+.js :is(.problem-card, .service-card, .industry-card, .step-card, .capability-item, .why-row, .x-card, .plan-card)[data-animate] {
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.js :is(.problem-card, .service-card, .industry-card, .step-card, .capability-item, .why-row, .x-card, .plan-card)[data-animate]:nth-child(n) { transition-delay: 0.1s; }
+.js :is(.problem-card, .service-card, .step-card, .x-card, .plan-card)[data-animate]:nth-child(3n+2) { transition-delay: 0.2s; }
+.js :is(.problem-card, .service-card, .step-card, .x-card, .plan-card)[data-animate]:nth-child(3n)   { transition-delay: 0.3s; }
+.js :is(.problem-card, .step-card)[data-animate]:nth-child(4)  { transition-delay: 0.4s; }
+.js :is(.industry-card, .capability-item)[data-animate]:nth-child(2n) { transition-delay: 0.2s; }
+
+@media (prefers-reduced-motion: reduce) {
+    body :is(.problem-card, .service-card, .industry-card, .step-card, .capability-item, .why-row, .x-card, .plan-card)::before { transition: none; }
+}
+
+/* =========================================================
+   PRICING PLAN CARDS: self-contained so the page does not
+   depend on pricing.css for the glow-card layout
+========================================================= */
+body .plan-card .plan-badge {
+    position: absolute; top: -14px; inset-inline-start: 36px; z-index: 2;
+    padding: 5px 14px; border-radius: 999px;
+    background: linear-gradient(137deg, #8D78D8, #D9A15C);
+    color: #fff; font-size: 12px; font-weight: 600; letter-spacing: .02em;
+}
+body .plan-card .plan-name { margin: 0; color: #fff; font-size: 1.25rem; font-weight: 500; letter-spacing: -.025em; }
+body .plan-card .plan-tagline { color: #9CA3AF; font-size: 14px; line-height: 1.6; margin: 0; }
+body .plan-card .plan-price { margin: 6px 0 4px; color: #fff; font-size: 1.1rem; font-weight: 600; }
+body .plan-card .plan-features { list-style: none; margin: 0 0 4px; padding: 0; display: grid; gap: 8px; width: 100%; }
+body .plan-card .plan-features li {
+    position: relative; padding-inline-start: 22px;
+    color: #C9CCD3; font-size: 13.5px; line-height: 1.5;
+}
+body .plan-card .plan-features li::before {
+    content: ""; position: absolute; inset-inline-start: 2px; top: .5em;
+    width: 6px; height: 10px; border: solid var(--primary-light);
+    border-width: 0 2px 2px 0; transform: translateY(-50%) rotate(45deg);
+}
+body .plan-card .plan-first { margin: auto 0 0; padding-top: 8px; color: #9CA3AF; font-size: 13px; }
+body .plan-card .plan-first strong { color: #fff; }
+body .plan-card .plan-features + .plan-first, body .plan-card > a:last-child { margin-top: 12px; }
+body .plan-card > a:last-child { align-self: flex-start; }
