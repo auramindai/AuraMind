@@ -182,78 +182,51 @@ document.documentElement.classList.add("js");
             <!-- =========================================================
      HERO
 ========================================================= -->
-            <section id="home" aria-labelledby="hero-title" class="hero section">
-                <div class="hero-background" aria-hidden="true">
-                    <div class="grid-overlay"></div>
-                    <div class="glow glow-one"></div>
-                    <div class="glow glow-two"></div>
-                </div>
-                <div class="container hero-container">
-                    <div class="hero-content">
-                        <span class="eyebrow" data-animate="fade-up" data-i18n="hero.eyebrow">AI assistants made for your business</span>
-                        <h1 id="hero-title" class="hero-title" data-animate="fade-up" data-animate-delay="1">
-                            <span class="hero-title-line1" data-i18n="hero.h1_line1">Never miss a customer message.</span>
-                            <span class="hero-title-line2" data-i18n="hero.h1_line2">Turn more enquiries into customers.</span>
-                        </h1>
-                        <p class="hero-description" data-i18n="hero.description" data-animate="fade-up" data-animate-delay="2">AuraMind builds AI assistants for WhatsApp, Instagram and your website. They answer customers in seconds, collect their details and hand the conversation to your team when it matters, so you win more leads and save hours every week.</p>
-                        <div class="hero-buttons" data-animate="fade-up" data-animate-delay="3">
-                            <a href="https://wa.me/15734095760" class="btn btn-primary" data-demo-cta target="_blank" rel="noopener">
-                                <span data-i18n="hero.btnPrimary">Try a Demo</span>
-                            </a>
-                            <a href="#contact" class="btn btn-secondary">
-                                <span data-i18n="hero.btnSecondary">Talk to an Expert</span>
-                            </a>
+            <section id="home" class="zl" aria-labelledby="hero-title">
+                <div class="zl-sky" aria-hidden="true"><canvas id="zlStars"></canvas><canvas id="zlRim"></canvas>
+                    <video id="zlGlow" class="zl-glow" muted loop playsinline preload="none" aria-hidden="true" src="images/hero-nebula.mp4"></video>
+                    <div class="zl-dglow" aria-hidden="true"></div></div>
+                <div class="zl-stage" id="zlStage">
+                    <div class="zl-hero">
+                        <span class="zl-eyebrow zl-a" style="--d:.2s" data-i18n="hero.eyebrow">Smarter business. Better results.</span>
+                        <h1 id="hero-title" class="zl-title"><span class="zl-l"><span style="--d:.3s"><span data-i18n="hero.h1a">Turn</span> <span data-i18n="hero.h1b">Every Customer Conversation</span></span></span><span class="zl-l"><span class="zl-grad" style="--d:.45s" data-i18n="hero.h1c">Into an Opportunity.</span></span></h1>
+                        <p class="zl-lede zl-a" style="--d:.7s" data-i18n="hero.description">We help businesses respond instantly, capture more leads and automate repetitive work, so you can focus on growing your business, not managing messages.</p>
+                        <div class="zl-btns zl-a" style="--d:.85s">
+                            <a href="https://wa.me/15734095760" class="zl-pill zl-v" data-consult-cta target="_blank" rel="noopener"><span data-i18n="hero.btnPrimary">Book a Free Consultation</span></a>
+                            <a href="#how-it-works" class="zl-pill zl-d"><span data-i18n="hero.btnSecondary">See How It Works</span></a>
                         </div>
                     </div>
-                    <!-- =====================================================
-             HERO PRODUCT PREVIEW
-        ====================================================== -->
-                    <div class="hero-visual hero-system-visual" data-animate="zoom-in" data-animate-delay="4">
-                        <div class="hero-artifact" aria-hidden="true">
-                            <video src="images/hero-nebula.mp4" autoplay muted loop playsinline preload="metadata" disablepictureinpicture width="540" height="540"></video>
-                        </div>
-                        <div class="system-window">
-                            <div class="system-window-bar">
-                                <div class="window-dots"><span></span> <span></span> <span></span></div>
-                                <div class="window-title">AuraMind AI</div>
-                                <div class="window-status">
-                                    <span class="status-dot"></span>
-                                    <span data-i18n="hero.online">Online</span>
-                                </div>
+                    <div class="zl-dash" role="img" aria-label="Preview of the AuraMind dashboard" data-i18n="hero.dLabel" data-i18n-attr="aria-label">
+                        <aside class="zl-side zl-a" style="--d:1.05s">
+                            <div class="zl-brand">AuraMind <span>⚙</span></div>
+                            <div class="zl-item"><b></b><span data-i18n="hero.dSearch">Search</span></div>
+                            <div class="zl-item zl-on"><b></b><span data-i18n="hero.dDashboard">Dashboard</span></div>
+                            <div class="zl-item"><b></b><span data-i18n="hero.dConversations">Conversations</span></div>
+                            <div class="zl-item"><b></b><span data-i18n="hero.dLeads">Leads</span></div>
+                            <div class="zl-item"><b></b><span data-i18n="hero.dAppointments">Appointments</span></div>
+                            <div class="zl-sep" data-i18n="hero.dManage">Manage</div>
+                            <div class="zl-item"><b></b><span data-i18n="hero.dChannels">Channels</span></div>
+                            <div class="zl-item"><b></b><span data-i18n="hero.dTeam">Team</span></div>
+                            <div class="zl-item"><b></b><span data-i18n="hero.dSettings">Settings</span></div>
+                            <div class="zl-promo"><strong data-i18n="hero.dPromoTitle">AuraMind Pro</strong><span data-i18n="hero.dPromoText">Unlock multilingual assistants and advanced workflows.</span><em data-i18n="hero.dUpgrade">Upgrade</em></div>
+                        </aside>
+                        <div class="zl-main">
+                            <div class="zl-top zl-a" style="--d:1.15s"><i class="zl-ic"></i><i class="zl-ic"></i><i class="zl-av"></i><span><strong>AuraMind Team</strong> <small>hello@aiauramind.com</small></span></div>
+                            <div class="zl-stats">
+                                <div class="zl-card zl-a" style="--d:1.25s"><label data-i18n="hero.dStatLeads">Leads captured (since launch)</label><div class="zl-n">3,208<span class="zl-up">+18.4%</span></div></div>
+                                <div class="zl-card zl-a" style="--d:1.35s"><label data-i18n="hero.dStatConv">Conversations handled</label><div class="zl-n">12,640<span class="zl-dn">−3.1%</span></div></div>
                             </div>
-                            <div class="system-chat">
-                                <div class="system-message customer">
-                                    <small data-i18n="hero.previewCustomerLabel">Customer</small>
-                                    <p data-i18n="hero.previewCustomer">Hi, I’d like to know if you deliver.</p>
-                                </div>
-                                <div class="system-message ai">
-                                    <small data-i18n="hero.previewAiLabel">AuraMind AI</small>
-                                    <p data-i18n="hero.previewAi">Absolutely. I can help with delivery, orders, and any questions about the business.</p>
-                                </div>
-                                <div class="system-actions">
-                                    <span>
-                                        <i aria-hidden="true">✓</i>
-                                        <span data-i18n="hero.previewAction1">Conversation understood</span>
-                                    </span>
-                                    <span>
-                                        <i aria-hidden="true">✓</i>
-                                        <span data-i18n="hero.previewAction2">Customer information captured</span>
-                                    </span>
-                                    <span>
-                                        <i aria-hidden="true">✓</i>
-                                        <span data-i18n="hero.previewAction3">Next action triggered</span>
-                                    </span>
-                                </div>
+                            <div class="zl-card zl-chart zl-a" style="--d:1.45s"><h3 data-i18n="hero.dChart">Daily conversations handled</h3>
+                                <svg viewBox="0 0 640 190" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="zlArea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#9b6bff" stop-opacity=".7"/><stop offset="1" stop-color="#6d3df0" stop-opacity="0"/></linearGradient></defs><g stroke="rgba(247,247,248,.07)"><path d="M0 40H640M0 90H640M0 140H640"/></g><path d="M0 150C40 140 70 120 110 126S180 80 230 92 300 140 350 100 430 40 480 60 560 30 640 20V190H0Z" fill="url(#zlArea)"/><path d="M0 150C40 140 70 120 110 126S180 80 230 92 300 140 350 100 430 40 480 60 560 30 640 20" fill="none" stroke="#c9b8ff" stroke-width="2.5" vector-effect="non-scaling-stroke"/></svg>
                             </div>
                         </div>
-                        <div class="system-float system-float-top">
-                            <strong data-i18n="hero.floatTopTitle">Customer captured</strong>
-                            <small data-i18n="hero.floatTopText">Ready for your workflow</small>
-                        </div>
-                        <div class="system-float system-float-bottom">
-                            <strong data-i18n="hero.floatBottomTitle">AI working</strong>
-                            <small data-i18n="hero.floatBottomText">No manual reply required</small>
-                        </div>
+                        <aside class="zl-cal zl-a" style="--d:1.55s">
+                            <h3 data-i18n="hero.dMonth">November 2026</h3><div class="zl-sub" data-i18n="hero.dSince">Since launch (monthly)</div>
+                            <div class="zl-row"><span data-i18n="hero.dBookings">Total bookings</span><span><b>1,284</b> <em class="zl-up">+8.4%</em></span></div>
+                            <div class="zl-row"><span data-i18n="hero.dResponse">Avg. response</span><b>1.8s</b></div>
+                            <div class="zl-row"><span data-i18n="hero.dRate">Booking rate</span><span><b>68.2%</b> <em class="zl-up">+2.1%</em></span></div>
+                            <div class="zl-row zl-apps"><span class="zl-sub" data-i18n="hero.dChannelsLabel">Connected channels</span><b>WhatsApp · Instagram · Web</b></div>
+                        </aside>
                     </div>
                 </div>
             </section>
@@ -396,7 +369,7 @@ document.documentElement.classList.add("js");
                         <h2 id="solution-title" data-i18n="solution.title">More than a chatbot.</h2>
                         <p data-i18n="solution.description">A chatbot only replies. AuraMind connects the conversation to the work your business actually needs done.</p>
                         <div class="capability-list">
-                            <div class="capability-item">
+                            <div class="capability-item" data-animate="fade-up">
                                 <span class="capability-icon">
                                     <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
                                         <circle cx="8.75" cy="8.75" r="5.25" stroke="currentColor" stroke-width="1.4"/>
@@ -408,7 +381,7 @@ document.documentElement.classList.add("js");
                                     <p data-i18n="solution.item1Text">Understand customer intent and context.</p>
                                 </div>
                             </div>
-                            <div class="capability-item">
+                            <div class="capability-item" data-animate="fade-up">
                                 <span class="capability-icon">
                                     <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false"><path d="M4 5.75A1.75 1.75 0 0 1 5.75 4h8.5A1.75 1.75 0 0 1 16 5.75v10.6l-3.4-2.1a2 2 0 0 0-2.1 0L7 16.35V5.75Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
                                 </span>
@@ -417,7 +390,7 @@ document.documentElement.classList.add("js");
                                     <p data-i18n="solution.item2Text">Keep relevant customer information across conversations.</p>
                                 </div>
                             </div>
-                            <div class="capability-item">
+                            <div class="capability-item" data-animate="fade-up">
                                 <span class="capability-icon">
                                     <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false"><path d="M10.8 3 5 11.2h3.9L8.2 17l6.3-8.6h-4.1L10.8 3Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
                                 </span>
@@ -426,7 +399,7 @@ document.documentElement.classList.add("js");
                                     <p data-i18n="solution.item3Text">Trigger the right business workflow at the right time.</p>
                                 </div>
                             </div>
-                            <div class="capability-item">
+                            <div class="capability-item" data-animate="fade-up">
                                 <span class="capability-icon">
                                     <svg viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
                                         <circle cx="7.25" cy="6.5" r="2.35" stroke="currentColor" stroke-width="1.3"/>
@@ -751,18 +724,18 @@ document.documentElement.classList.add("js");
                         <p data-i18n="preview.description">Three packages, one setup fee. Hosting, maintenance and small updates are always included.</p>
                     </div>
                     <div class="x-grid">
-                        <a class="x-card" href="/pricing">
+                        <a class="x-card" data-animate="fade-up" href="/pricing">
                             <h3 class="x-name">Starter</h3>
                             <div class="x-price">$<b dir="ltr" data-i18n="pricing.starterPrice">99.90</b><span data-i18n="pricing.perMonth">/ month</span></div>
                             <p data-i18n="preview.d1">WhatsApp AI assistant, FAQs and lead capture.</p>
                         </a>
-                        <a class="x-card f" href="/pricing">
+                        <a class="x-card f" data-animate="fade-up" href="/pricing">
                             <span class="x-pop" data-i18n="pricing.popular">Most popular</span>
                             <h3 class="x-name">Business</h3>
                             <div class="x-price">$<b dir="ltr" data-i18n="pricing.businessPrice">199.90</b><span data-i18n="pricing.perMonth">/ month</span></div>
                             <p data-i18n="preview.d2">Everything in Starter, plus three languages, booking and instant lead alerts.</p>
                         </a>
-                        <a class="x-card" href="/pricing">
+                        <a class="x-card" data-animate="fade-up" href="/pricing">
                             <h3 class="x-name">Pro</h3>
                             <div class="x-price">$<b dir="ltr" data-i18n="pricing.proPrice">300.00</b><span data-i18n="pricing.perMonth">/ month</span></div>
                             <p data-i18n="preview.d3">Everything in Business, plus every language you choose, CRM / Google Sheets, follow-ups and priority support.</p>
@@ -781,7 +754,7 @@ document.documentElement.classList.add("js");
                         <p data-i18n="faq.description">Straight answers before you get in touch.</p>
                     </div>
                     <div class="x-faq">
-                        <details>
+                        <details open>
                             <summary data-i18n="faq.q1">What does the setup fee cover?</summary>
                             <p data-i18n="faq.a1">It is a one-time $200 fee that applies to every package. After that, the monthly fee covers hosting, maintenance and small updates.</p>
                         </details>
