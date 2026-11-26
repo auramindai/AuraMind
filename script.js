@@ -60,12 +60,8 @@
                 "pricing": "Pricing"
             },
             "hero": {
-                "eyebrow": "AI assistants made for your business",
                 "h1_line1": "Never miss a customer message.",
                 "h1_line2": "Turn more enquiries into customers.",
-                "description": "AuraMind builds AI assistants for WhatsApp, Instagram and your website. They answer customers in seconds, collect their details and hand the conversation to your team when it matters, so you win more leads and save hours every week.",
-                "btnPrimary": "Try a Demo",
-                "btnSecondary": "Talk to an Expert",
                 "trustAvailability": "AI availability",
                 "trustResponse": "Customer responses",
                 "trustCustom": "Built for your business",
@@ -83,7 +79,52 @@
                 "floatBottomText": "No manual reply required",
                 "trustAvailabilityValue": "24/7",
                 "trustResponseValue": "Instant",
-                "trustCustomValue": "Custom"
+                "trustCustomValue": "Custom",
+                "eyebrow": "Smarter business. Better results.",
+                "h1a": "Turn",
+                "h1b": "Every Customer Conversation",
+                "h1c": "Into an Opportunity.",
+                "description": "We help businesses respond instantly, capture more leads and automate repetitive work, so you can focus on growing your business, not managing messages.",
+                "b1": "24/7 Customer Responses",
+                "b2": "More Captured Opportunities",
+                "b3": "Less Manual Work",
+                "btnPrimary": "Book a Free Consultation",
+                "btnSecondary": "See How It Works",
+                "c1": "Hi! Do you have any appointments available tomorrow?",
+                "c2l": "AI assistant",
+                "c2": "Absolutely! I can help you find an available appointment.",
+                "c3": "New lead successfully captured.",
+                "c4": "Appointment workflow initiated.",
+                "c5": "Your team has been notified.",
+                "visualLabel": "A customer message on WhatsApp is answered by the AI assistant, captured as a lead, starts an appointment workflow and notifies your team.",
+                "stripLabel": "Built to make your business work smarter",
+                "s1": "24/7 Availability",
+                "s2": "Multilingual Support",
+                "s3": "Smart Lead Capture",
+                "s4": "Custom Automation",
+                "consultMessage": "Hi! I'd like to book a free consultation with AuraMind.",
+                "dLabel": "Preview of the AuraMind dashboard",
+                "dSearch": "Search",
+                "dDashboard": "Dashboard",
+                "dConversations": "Conversations",
+                "dLeads": "Leads",
+                "dAppointments": "Appointments",
+                "dManage": "Manage",
+                "dChannels": "Channels",
+                "dTeam": "Team",
+                "dSettings": "Settings",
+                "dPromoTitle": "AuraMind Pro",
+                "dPromoText": "Unlock multilingual assistants and advanced workflows.",
+                "dUpgrade": "Upgrade",
+                "dStatLeads": "Leads captured (since launch)",
+                "dStatConv": "Conversations handled",
+                "dChart": "Daily conversations handled",
+                "dMonth": "November 2026",
+                "dSince": "Since launch (monthly)",
+                "dBookings": "Total bookings",
+                "dResponse": "Avg. response",
+                "dRate": "Booking rate",
+                "dChannelsLabel": "Connected channels"
             },
             "platforms": {
                 "label": "Built for the channels your customers already use"
@@ -355,12 +396,8 @@
                 "pricing": "Fiyatlandırma"
             },
             "hero": {
-                "eyebrow": "İşletmenize özel yapay zeka asistanları",
                 "h1_line1": "Hiçbir müşteri mesajını kaçırmayın.",
                 "h1_line2": "Daha çok soruyu müşteriye dönüştürün.",
-                "description": "WhatsApp, Instagram ve web siteniz için yapay zeka asistanları kuruyoruz. Müşterilerinize saniyeler içinde yanıt verir, bilgilerini kaydeder ve gerektiğinde sohbeti ekibinize devreder; böylece daha fazla müşteri kazanır, her hafta saatlerce zaman kazanırsınız.",
-                "btnPrimary": "Demoyu Deneyin",
-                "btnSecondary": "Bir Uzmanla Görüşün",
                 "trustAvailability": "Kesintisiz yapay zeka",
                 "trustResponse": "Müşteri yanıtları",
                 "trustCustom": "İşletmenize özel kurulur",
@@ -378,7 +415,52 @@
                 "floatBottomText": "Manuel yanıt gerekmiyor",
                 "trustAvailabilityValue": "7/24",
                 "trustResponseValue": "Anında",
-                "trustCustomValue": "Özel"
+                "trustCustomValue": "Özel",
+                "eyebrow": "Daha akıllı iş. Daha iyi sonuçlar.",
+                "h1a": "Her",
+                "h1b": "Müşteri Konuşmasını",
+                "h1c": "Bir Fırsata Dönüştürün.",
+                "description": "İşletmelerin anında yanıt vermesine, daha fazla potansiyel müşteri kazanmasına ve tekrarlayan işleri otomatikleştirmesine yardımcı oluyoruz. Siz mesajlarla değil, işinizi büyütmeyle ilgilenin.",
+                "b1": "7/24 Müşteri Yanıtları",
+                "b2": "Daha Fazla Yakalanan Fırsat",
+                "b3": "Daha Az Manuel İş",
+                "btnPrimary": "Ücretsiz Danışmanlık Alın",
+                "btnSecondary": "Nasıl Çalışır?",
+                "c1": "Merhaba! Yarın için uygun randevunuz var mı?",
+                "c2l": "Yapay zeka asistanı",
+                "c2": "Elbette! Uygun bir randevu bulmanıza yardımcı olabilirim.",
+                "c3": "Yeni potansiyel müşteri başarıyla kaydedildi.",
+                "c4": "Randevu iş akışı başlatıldı.",
+                "c5": "Ekibinize bildirim gönderildi.",
+                "visualLabel": "WhatsApp'taki müşteri mesajı yapay zeka asistanı tarafından yanıtlanır, potansiyel müşteri olarak kaydedilir, randevu iş akışı başlar ve ekibiniz bilgilendirilir.",
+                "stripLabel": "İşletmenizin daha akıllı çalışması için tasarlandı",
+                "s1": "7/24 Erişilebilirlik",
+                "s2": "Çok Dilli Destek",
+                "s3": "Akıllı Müşteri Yakalama",
+                "s4": "Özel Otomasyon",
+                "consultMessage": "Merhaba! AuraMind ile ücretsiz bir danışmanlık görüşmesi ayarlamak istiyorum.",
+                "dLabel": "AuraMind panelinin önizlemesi",
+                "dSearch": "Ara",
+                "dDashboard": "Panel",
+                "dConversations": "Görüşmeler",
+                "dLeads": "Potansiyel müşteriler",
+                "dAppointments": "Randevular",
+                "dManage": "Yönet",
+                "dChannels": "Kanallar",
+                "dTeam": "Ekip",
+                "dSettings": "Ayarlar",
+                "dPromoTitle": "AuraMind Pro",
+                "dPromoText": "Çok dilli asistanların ve gelişmiş iş akışlarının kilidini açın.",
+                "dUpgrade": "Yükselt",
+                "dStatLeads": "Yakalanan potansiyel müşteri (başlangıçtan beri)",
+                "dStatConv": "Yönetilen görüşme",
+                "dChart": "Günlük yönetilen görüşmeler",
+                "dMonth": "Kasım 2026",
+                "dSince": "Başlangıçtan beri (aylık)",
+                "dBookings": "Toplam rezervasyon",
+                "dResponse": "Ort. yanıt süresi",
+                "dRate": "Rezervasyon oranı",
+                "dChannelsLabel": "Bağlı kanallar"
             },
             "platforms": {
                 "label": "Müşterilerinizin zaten kullandığı kanallar için tasarlandı"
@@ -644,12 +726,8 @@
                 "pricing": "الأسعار"
             },
             "hero": {
-                "eyebrow": "مساعدات ذكاء اصطناعي مصممة لعملك",
                 "h1_line1": "لا تفوّت أي رسالة من عملائك.",
                 "h1_line2": "حوّل المزيد من الاستفسارات إلى عملاء.",
-                "description": "نبني مساعدين بالذكاء الاصطناعي لواتساب وإنستغرام وموقعك الإلكتروني. يردّون على عملائك خلال ثوانٍ، ويسجّلون بياناتهم، ويحوّلون المحادثة إلى فريقك عند الحاجة، لتكسب عملاء أكثر وتوفّر ساعات كل أسبوع.",
-                "btnPrimary": "جرّب العرض التجريبي",
-                "btnSecondary": "تحدث مع خبير",
                 "trustAvailability": "خدمة متواصلة",
                 "trustResponse": "الرد على العملاء",
                 "trustCustom": "مصمم خصيصًا لعملك",
@@ -667,7 +745,52 @@
                 "floatBottomText": "لا حاجة لرد يدوي",
                 "trustAvailabilityValue": "24/7",
                 "trustResponseValue": "فوري",
-                "trustCustomValue": "مخصص"
+                "trustCustomValue": "مخصص",
+                "eyebrow": "عمل أذكى. نتائج أفضل.",
+                "h1a": "حوّل",
+                "h1b": "كل محادثة مع العملاء",
+                "h1c": "إلى فرصة جديدة.",
+                "description": "نساعد الشركات على الرد فورًا وجذب عملاء محتملين أكثر وأتمتة المهام المتكررة، لتركّز على تنمية عملك بدلًا من إدارة الرسائل.",
+                "b1": "ردود على العملاء 24/7",
+                "b2": "فرص أكثر يتم اقتناصها",
+                "b3": "جهد يدوي أقل",
+                "btnPrimary": "احجز استشارة مجانية",
+                "btnSecondary": "اكتشف كيف نعمل",
+                "c1": "مرحبًا! هل لديكم مواعيد متاحة غدًا؟",
+                "c2l": "مساعد الذكاء الاصطناعي",
+                "c2": "بالتأكيد! يمكنني مساعدتك في إيجاد موعد متاح.",
+                "c3": "تم تسجيل عميل محتمل جديد بنجاح.",
+                "c4": "تم بدء سير عمل الموعد.",
+                "c5": "تم إشعار فريقك.",
+                "visualLabel": "يتم الرد على رسالة العميل في واتساب بواسطة مساعد الذكاء الاصطناعي، وتسجيلها كعميل محتمل، وبدء سير عمل الموعد وإشعار فريقك.",
+                "stripLabel": "صُمم ليجعل عملك أكثر ذكاءً",
+                "s1": "متاح على مدار الساعة",
+                "s2": "دعم متعدد اللغات",
+                "s3": "جذب ذكي للعملاء المحتملين",
+                "s4": "أتمتة مخصصة",
+                "consultMessage": "مرحبًا! أود حجز استشارة مجانية مع AuraMind.",
+                "dLabel": "معاينة للوحة تحكم AuraMind",
+                "dSearch": "بحث",
+                "dDashboard": "لوحة التحكم",
+                "dConversations": "المحادثات",
+                "dLeads": "العملاء المحتملون",
+                "dAppointments": "المواعيد",
+                "dManage": "إدارة",
+                "dChannels": "القنوات",
+                "dTeam": "الفريق",
+                "dSettings": "الإعدادات",
+                "dPromoTitle": "AuraMind Pro",
+                "dPromoText": "افتح المساعدين متعددي اللغات وسير العمل المتقدم.",
+                "dUpgrade": "ترقية",
+                "dStatLeads": "العملاء المحتملون (منذ الإطلاق)",
+                "dStatConv": "المحادثات المُدارة",
+                "dChart": "المحادثات اليومية المُدارة",
+                "dMonth": "نوفمبر 2026",
+                "dSince": "منذ الإطلاق (شهريًا)",
+                "dBookings": "إجمالي الحجوزات",
+                "dResponse": "متوسط زمن الرد",
+                "dRate": "معدل الحجز",
+                "dChannelsLabel": "القنوات المتصلة"
             },
             "platforms": {
                 "label": "مصمم للقنوات التي يستخدمها عملاؤك بالفعل"
@@ -1043,6 +1166,7 @@
             updateLanguageButtons(lang);
             updatePlanLinks(lang);
             updateDemoLinks(lang);
+            updateConsultLinks(lang);
         }
 
         function updateLanguageButtons(lang) {
@@ -1055,6 +1179,13 @@
 
         /* Pricing page: each "Get started" button opens WhatsApp with a
            pre-written message in the visitor's language. */
+        function updateConsultLinks(lang) {
+            const message = translate("hero.consultMessage", lang);
+            document.querySelectorAll("[data-consult-cta]").forEach((link) => {
+                link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+            });
+        }
+
         function updatePlanLinks(lang) {
             document.querySelectorAll("[data-plan-cta]").forEach((link) => {
                 const message = `${translate("pricing.waMessage", lang)} ${link.getAttribute("data-plan-cta")}`;
@@ -1414,6 +1545,212 @@
     }
 
 
+
+    /* =====================================================
+       VIOLET HERO: starfield, planet rim, scaling, glow video
+    ===================================================== */
+
+    const HeroSky = (() => {
+        const DW = 1672, DH = 941;
+        let section, stars, rim, video, raf = 0, videoStarted = false;
+
+        const isMobile = () => window.innerWidth < 900 || window.innerHeight > window.innerWidth;
+
+        function drawStars(w, h, dpr) {
+            const ctx = stars.getContext("2d");
+            ctx.clearRect(0, 0, w, h);
+            let seed = 7;
+            const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+            const n = Math.round((w * h) / 9000);
+            for (let i = 0; i < n; i++) {
+                ctx.globalAlpha = 0.15 + rnd() * 0.75;
+                ctx.fillStyle = rnd() > 0.85 ? "#d9ccff" : "#fff";
+                ctx.beginPath();
+                ctx.arc(rnd() * w, rnd() * h * 0.9, (0.3 + rnd() * 0.9) * dpr, 0, Math.PI * 2);
+                ctx.fill();
+            }
+            ctx.globalAlpha = 1;
+        }
+
+        /* Static fallback rim (violet polar colour table). The video, when ready, adds the motion. */
+        function drawRim(w, h, scale, dpr) {
+            const ctx = rim.getContext("2d");
+            const mobile = isMobile();
+            const R = mobile ? w * 1.1 : w * 0.75;
+            const crest = (mobile ? 70 : 70 * scale) * dpr;
+            const cx = w / 2, cy = crest + R, outer = R * 1.12;
+            ctx.clearRect(0, 0, w, h);
+            const g = ctx.createRadialGradient(cx, cy, 0, cx, cy, outer);
+            [[0, "rgba(8,3,20,.55)"], [0.8, "rgba(5,2,12,.5)"], [0.85, "rgba(60,20,160,.35)"], [0.88, "rgba(155,107,255,.8)"],
+             [0.893, "rgba(220,205,255,.95)"], [0.92, "rgba(155,107,255,.4)"], [0.96, "rgba(109,61,240,.1)"], [1, "rgba(0,0,0,0)"]]
+                .forEach(([stop, color]) => g.addColorStop(stop, color));
+            ctx.fillStyle = g;
+            ctx.fillRect(0, 0, w, h);
+        }
+
+        function fit() {
+            raf = 0;
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+            let scale = 1;
+            if (!isMobile()) {
+                scale = Math.min(section.clientWidth / DW, window.innerHeight / DH);
+                section.style.setProperty("--zs", scale.toFixed(4));
+                section.style.setProperty("--zh", Math.round(DH * scale) + "px");
+            } else {
+                section.style.removeProperty("--zs");
+                section.style.removeProperty("--zh");
+            }
+            const w = Math.round(section.clientWidth * dpr), h = Math.round(section.clientHeight * dpr);
+            [stars, rim].forEach((c) => { c.width = w; c.height = h; });
+            drawStars(w, h, dpr);
+            drawRim(w, h, scale, dpr);
+            maybeStartVideo();
+        }
+
+        function maybeStartVideo() {
+            if (!video || videoStarted || isMobile() || prefersReducedMotion.matches) return;
+            videoStarted = true;
+            video.preload = "auto";
+            video.addEventListener("canplay", () => {
+                video.play().then(() => video.classList.add("is-on")).catch(() => {});
+            }, { once: true });
+            video.load();
+            if ("IntersectionObserver" in window) {
+                new IntersectionObserver(([entry]) => {
+                    if (entry.isIntersecting) video.play().catch(() => {}); else video.pause();
+                }).observe(section);
+            }
+        }
+
+        function schedule() { if (!raf) raf = requestAnimationFrame(fit); }
+
+        function init() {
+            section = document.getElementById("home");
+            stars = document.getElementById("zlStars");
+            rim = document.getElementById("zlRim");
+            video = document.getElementById("zlGlow");
+            if (!section || !stars || !rim || !section.classList.contains("zl")) return;
+            if (video && prefersReducedMotion.matches) { video.remove(); video = null; }
+            fit();
+            window.addEventListener("resize", schedule);
+        }
+
+        return { init };
+    })();
+
+
+    /* =====================================================
+       HALFTONE DOT FIELD (all pages; the home hero covers it)
+       Fixed full-viewport canvas of round violet dots: ragged and
+       sparse at the top, dense and pale lower down. Every dot swells
+       on its own rhythm and near the cursor. Faint behind content,
+       full strength when the FAQ, contact form or footer is in view.
+    ===================================================== */
+
+    const DotField = (() => {
+        const C0 = [109, 61, 240], C1 = [155, 107, 255], C2 = [220, 207, 255];
+        const AMBIENT = 0.16, STRONG = 0.9;
+        const calm = prefersReducedMotion.matches;
+        let cv, ctx, W = 0, H = 0, step = 0, cols = 0, rows = 0, seed = [];
+        let mx = -9999, my = -9999, tmx = -9999, tmy = -9999, strength = 0, targets = [], hero = null, queued = false;
+
+        const hash = (i, j) => { const h = Math.sin(i * 127.1 + j * 311.7) * 43758.5453; return h - Math.floor(h); };
+        const mix = (a, b, t) => a.map((v, k) => Math.round(v + (b[k] - v) * t));
+
+        function size() {
+            const dpr = Math.min(window.devicePixelRatio || 1, 2);
+            W = cv.clientWidth; H = cv.clientHeight;
+            cv.width = Math.round(W * dpr); cv.height = Math.round(H * dpr);
+            ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+            step = Math.max(14, Math.min(W / 1600, H / 940) * 20.5);
+            cols = Math.ceil(W / step) + 1; rows = Math.ceil(H / step) + 1;
+            seed = [];
+            for (let j = 0; j < rows; j++) for (let i = 0; i < cols; i++) seed.push([hash(i, j), hash(i + 71, j + 13), hash(i + 9, j + 97)]);
+            request();
+        }
+
+        /* How much of the strongest "closing" block (FAQ, contact, footer) is on screen, 0..1. */
+        function targetStrength() {
+            let best = 0;
+            for (const el of targets) {
+                const r = el.getBoundingClientRect();
+                const overlap = Math.min(r.bottom, H) - Math.max(r.top, 0);
+                if (overlap > 0) best = Math.max(best, Math.min(1, overlap / Math.min(r.height, H * 0.7)));
+            }
+            return best;
+        }
+
+        function draw(t) {
+            ctx.clearRect(0, 0, W, H);
+            if (hero && hero.getBoundingClientRect().bottom >= H) return; /* hero fills the screen */
+            mx += (tmx - mx) * 0.12; my += (tmy - my) * 0.12;
+            strength += (targetStrength() - strength) * 0.08;
+            ctx.globalAlpha = AMBIENT + (STRONG - AMBIENT) * strength;
+            const top = H * 0.1, full = H * 0.36, R = step * 0.37;
+            for (let j = 0; j < rows; j++) {
+                const y = j * step + step * 0.5;
+                if (y < top - step * 2) continue;
+                const v = Math.min(1, Math.max(0, (y - top) / (full - top)));
+                const col = v < 0.55 ? mix(C0, C1, v / 0.55) : mix(C1, C2, (v - 0.55) / 0.45 * 0.85 + Math.max(0, (y - H * 0.9) / (H * 0.1)) * 0.15);
+                ctx.fillStyle = `rgb(${col[0]},${col[1]},${col[2]})`;
+                for (let i = 0; i < cols; i++) {
+                    const x = i * step + step * 0.5, s3 = seed[j * cols + i], a = s3[0], b = s3[1], c = s3[2];
+                    const wave = calm ? 0.7 : 0.5 + 0.5 * Math.sin(t * (1.6 + b * 2.6) + a * 6.283 + Math.sin(t * 0.7 + i * 0.21 + j * 0.13) * 1.4);
+                    const keep = Math.min(1, v * 1.6 + 0.12) - a * 0.6;
+                    if (keep <= 0 && c > 0.08) continue;
+                    let s = (0.42 + 0.58 * Math.pow(wave, 1.3)) * Math.min(1, 0.5 + v * 0.6) * (keep > 0 ? 1 : 0.8);
+                    const dx = x - mx, dy = y - my;
+                    s = Math.min(1.05, s + Math.exp(-(dx * dx + dy * dy) / (step * step * 22)) * 0.7);
+                    const r = R * s;
+                    if (r < 0.6) continue;
+                    ctx.beginPath(); ctx.arc(x, y, r, 0, 6.2832); ctx.fill();
+                }
+            }
+            ctx.globalAlpha = 1;
+        }
+
+        function loop(ms) { draw(ms / 1000); requestAnimationFrame(loop); }
+
+        /* Reduced motion: no loop, redraw one still frame when something changes. */
+        function request() {
+            if (!calm || queued) return;
+            queued = true;
+            requestAnimationFrame((ms) => { queued = false; strength = targetStrength(); draw(ms / 1000); });
+        }
+
+        function init() {
+            if (document.getElementById("dotField")) return;
+            cv = document.createElement("canvas");
+            cv.id = "dotField";
+            cv.setAttribute("aria-hidden", "true");
+            document.body.insertBefore(cv, document.body.firstChild);
+            ctx = cv.getContext("2d");
+            if (!ctx) { cv.remove(); return; }
+            hero = document.querySelector("#home.zl");
+            targets = Array.from(document.querySelectorAll("#faq, #contact, .footer"));
+            size();
+            window.addEventListener("resize", size);
+            window.addEventListener("scroll", request, { passive: true });
+            window.addEventListener("pointermove", (e) => {
+                if (e.pointerType === "touch") return;
+                tmx = e.clientX; tmy = e.clientY;
+            }, { passive: true });
+            document.documentElement.addEventListener("mouseleave", () => { tmx = tmy = -9999; });
+            if (!calm) requestAnimationFrame(loop);
+        }
+
+        return { init };
+    })();
+
+    /* FAQ: one answer open at a time. */
+    function initFaq() {
+        const items = Array.from(document.querySelectorAll(".x-faq details"));
+        items.forEach((item) => item.addEventListener("toggle", () => {
+            if (!item.open) return;
+            items.forEach((other) => { if (other !== item) other.open = false; });
+        }));
+    }
+
     /* =====================================================
        INITIALIZATION
     ===================================================== */
@@ -1426,6 +1763,9 @@
         OffscreenGate.init();
         ScrollNav.init();
         LeadForm.init();
+        HeroSky.init();
+        DotField.init();
+        initFaq();
     }
 
     function start() {
