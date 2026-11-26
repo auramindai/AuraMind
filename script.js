@@ -700,6 +700,12 @@
                 "clinics": "Kavisli detaylara ve yumuşak aydınlatmaya sahip modern bir klinik resepsiyon masası",
                 "retail": "Bitkilerle dolu bir dükkânda, önlüklü ve gülümseyen bir küçük işletme sahibi dizüstü bilgisayarla tezgâhın arkasında duruyor"
             },
+            "legal": {
+                "privacyTitle": "Gizlilik Politikası | AuraMind AI",
+                "privacyDesc": "AuraMind AI'ın bizimle paylaştığınız bilgileri nasıl topladığı, kullandığı ve koruduğu.",
+                "termsTitle": "Kullanım Koşulları | AuraMind AI",
+                "termsDesc": "AuraMind AI web sitesini kullanırken geçerli olan koşullar."
+            },
             "notFound": {
                 "metaTitle": "Sayfa bulunamadı | AuraMind AI",
                 "title": "Sayfa bulunamadı",
@@ -1029,6 +1035,12 @@
                 "realEstate": "نموذج منزل مصغّر بجانب عملات معدنية مكدسة ومخطط نمو صاعد، يرمز إلى الاستثمار العقاري",
                 "clinics": "مكتب استقبال عيادة حديث بإضاءة هادئة وتفاصيل منحنية",
                 "retail": "صاحب عمل صغير مبتسم يرتدي مريلة ويقف خلف طاولة مع حاسوب محمول داخل متجر مزين بالنباتات"
+            },
+            "legal": {
+                "privacyTitle": "سياسة الخصوصية | AuraMind AI",
+                "privacyDesc": "كيف تجمع AuraMind AI المعلومات التي تشاركها معنا وكيف تستخدمها وتحميها.",
+                "termsTitle": "شروط الاستخدام | AuraMind AI",
+                "termsDesc": "الشروط المطبقة عند استخدام موقع AuraMind AI."
             },
             "notFound": {
                 "metaTitle": "الصفحة غير موجودة | AuraMind AI",
